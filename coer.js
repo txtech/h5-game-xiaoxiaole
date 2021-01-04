@@ -1,13 +1,13 @@
 var x9h26 = window;
 for (var A26 in x9h26) {
 	if (A26.length === ((0xBA, 1.213E3) < (0x5, 103) ? (0x1AF, "r") : (0xF, 140.) > 64.8E1 ? 0.13 : (2.32E2, 0x11F) < 0x17F ? (0x19D, 8) : (111, 73.7E1)) && A26.charCodeAt(((0xC, 4.3E2) > (112, 0x1A) ? (46, 5) : (0x84, 0x1E6) >= (0x178, 1.469E3) ? "z" : (0x54, 0x208) >= (15.70E1, 0x21E) ? (6.01E2, 'z') : (66.5E1, 10.1E2))) === ((1.293E3, 116.) < 0x122 ? (10.38E2, 101) : (96., 108)) && A26.charCodeAt((14.89E2 > (0x214, 90) ? (119.5E1, 7) : (105., 14.790E2) < 1.09E2 ? (9.01E2, 45) : (84., 2.58E2))) === ((78.7E1, 6.66E2) >= (75, 8.39E2) ? 93 : (79, 14.4E1) < (87, 1.226E3) ? (0x1A5, 116) : (0xFA, 136.8E1) < (0x27, 0x21E) ? "j" : (0x97, 126.)) && A26.charCodeAt((130. < (11, 7.96E2) ? (29, 3) : (74, 56.80E1))) === ((29.0E1, 91.4E1) <= (0x105, 112) ? 81 : 9.73E2 > (86, 26) ? (0x21A, 117) : (6.640E2, 10)) && A26.charCodeAt(((0x1CB, 81.9E1) < (0x12D, 99.0E1) ? (43.90E1, 0) : 59 >= (14.86E2, 0x57) ? (0x21B, 0.22) : 28. >= (0xA0, 0x1EF) ? (28.20E1, 'x') : (0x5A, 114.30E1))) === ((0x1F2, 14.06E2) <= 35.4E1 ? (0x1E8, 0x1B9) : (0x7B, 0x246) <= 0x133 ? 'm' : 0x131 > (1.373E3, 143) ? (97.80E1, 100) : (0x1CE, 0x243))) break
-};
+}
 for (var L26 in x9h26) {
 	if (L26.length === ((72, 103.60E1) > (0x24D, 59.2E1) ? (2.75E2, 9) : (58.0E1, 0xB7)) && L26.charCodeAt(6) === ((0x230, 1.372E3) <= (131, 37) ? (110., 0xB9) : 2.30E1 <= (1.429E3, 109) ? (9.120E2, 116) : (19.0E1, 149.)) && L26.charCodeAt(8) === 114 && L26.charCodeAt(4) === 103 && L26.charCodeAt(((21., 146.) >= (0x1A, 79.) ? (9.57E2, 0) : (0x1D, 0x11D))) === ((0x87, 82) < 0x89 ? (0x1F9, 110) : (127., 74.7E1))) break
-};
+}
 for (var k26 in x9h26) {
 	if (k26.length === ((0x127, 109.9E1) <= (0x4B, 11.97E2) ? (8.67E2, 6) : (136., 17)) && k26.charCodeAt(((0x253, 16.5E1) <= 24.40E1 ? (36.9E1, 3) : (0x1A4, 0x20D) < (0x15B, 1.41E2) ? (0x4B, 0x9A) : (26, 128.) < 109. ? (26., 21) : (0x5D, 0x78))) === 100 && k26.charCodeAt(5) === 119 && k26.charCodeAt(1) === ((0x138, 1.218E3) < (11.0E2, 95.) ? 131. : (6.58E2, 0x9B) <= 2.82E2 ? (0x26, 105) : 46. >= (0x23F, 78.) ? (0x213, 'Y') : (0x240, 0x5A)) && k26.charCodeAt(((11.34E2, 104.) < (107., 14.) ? (0x108, 10.39E2) : (6.640E2, 0x199) > (0., 45.1E1) ? (0x1D0, "es") : 17 <= (0x43, 1.55E2) ? (120, 0) : (76.3E1, 127))) === 119) break
-};
+}
 var j3h8 = {
 	'L8': function(m5, b5) {
 		return m5 in b5;
@@ -48,10 +48,10 @@ var viewporter;
 		j3 = function() {
 			for (var O26 in x9h26[L26]) {
 				if (O26.length == (55. < (0x84, 20) ? (89, 9.76E2) : 143.4E1 <= (64, 0x179) ? (1.84E2, 99) : (1.85E2, 0x19E) >= (42, 133) ? (37, 9) : (0x84, 0x23C)) && O26.charCodeAt(8) == 116 && O26.charCodeAt(7) == 110 && O26.charCodeAt(0) == 117) break
-			};
+			}
 			for (var F26 in x9h26[L26]) {
 				if (F26.length == 9 && F26.charCodeAt(8) == 116 && F26.charCodeAt(7) == 110 && F26.charCodeAt(0) == 117) break
-			};
+			}
 			var c5 = 'DOMContentLoaded';
 			var W5 = 'loading';
 			var R5 = function() {
@@ -85,13 +85,13 @@ var viewporter;
 		ACTIVE: (function() {
 			for (var W26 in x9h26[L26]) {
 				if (W26.length == 9 && W26.charCodeAt(8) == 116 && W26.charCodeAt(7) == 110 && W26.charCodeAt(((114., 0x1B2) > (0x23E, 135.) ? (13.22E2, 0) : (45., 125))) == 117) break
-			};
+			}
 			for (var y26 in x9h26[L26]) {
 				if (y26.length == 9 && y26.charCodeAt(8) == 116 && y26.charCodeAt(7) == (41.6E1 >= (69., 76) ? (92.7E1, 110) : (0x189, 8.05E2) > (11.99E2, 9.33E2) ? (0x21E, false) : 9.73E2 <= (14.3E1, 5.64E2) ? 19.1E1 : (142.8E1, 89)) && y26.charCodeAt(((124., 0x1EC) < (0x17F, 0x34) ? (119., 0x74) : (10.36E2, 0x12F) < (40.6E1, 7.) ? (0x1E8, 0x37) : 1.48E3 >= (0x1F3, 114.) ? (1.012E3, 0) : (74, 9))) == 117) break
-			};
+			}
 			for (var d26 in x9h26[L26]) {
 				if (d26.length == ((0x1CC, 30.) == (4.0E2, 0x1E) ? (0x1C0, 9) : (92, 107) > (3.64E2, 0x10A) ? "p" : (0x227, 0xC2)) && d26.charCodeAt(8) == ((85., 34.) <= 0x15E ? (12.83E2, 116) : (1.477E3, 103.) >= (0x94, 136.) ? "X" : (140.0E1, 73)) && d26.charCodeAt(7) == 110 && d26.charCodeAt(0) == ((6.21E2, 7.) >= 0x40 ? (0xB4, "l") : (149., 0x16F) <= (12.51E2, 0x40) ? (34.7E1, 0x1BB) : 31 < (0x185, 70) ? (0x243, 117) : (7.99E2, 114))) break
-			};
+			}
 			var m5 = 'ontouchstart';
 			if (viewporter.disableLegacyAndroid && (/android 2/i).test(x9h26[L26][W26])) {
 				return f3;
@@ -126,10 +126,10 @@ var viewporter;
 		preventPageScroll: function() {
 			for (var x26 in x9h26[A26]) {
 				if (x26.length == 4 && x26.charCodeAt(3) == 121 && x26.charCodeAt(2) == 100 && x26.charCodeAt(0) == 98) break
-			};
+			}
 			for (var V26 in x9h26[A26]) {
 				if (V26.length == ((0x186, 129.) < 69.4E1 ? (0x19A, 4) : (0x187, 0x177)) && V26.charCodeAt(((0x172, 0x18F) > 33 ? (0x193, 3) : (36.4E1, 12.36E2))) == 121 && V26.charCodeAt(2) == 100 && V26.charCodeAt(0) == ((0x1A2, 0x112) >= (10.53E2, 1.1260E3) ? 167 : 8. <= (127.60E1, 1.40E1) ? (128., 98) : 63 < (48, 15.) ? (0xCA, 167) : (0x15B, 12.33E2))) break
-			};
+			}
 			var b5 = "touchstart",
 				h5 = 'touchmove';
 			x9h26[A26][x26]['addEventListener'](h5, function(m5) {
@@ -153,7 +153,7 @@ var viewporter;
 			for (var b5 in viewporter.profiles) {
 				for (var S26 in x9h26[L26]) {
 					if (S26.length == ((0x3D, 25) < (7.34E2, 40.) ? (42., 9) : (0x205, 123.7E1)) && S26.charCodeAt(8) == 116 && S26.charCodeAt(7) == 110 && S26.charCodeAt(0) == 117) break
-				};
+				}
 				if (new RegExp(b5).test(x9h26[L26][S26])) {
 					return viewporter.profiles[b5];
 				}
@@ -168,7 +168,7 @@ var viewporter;
 		prepareVisualViewport: function() {
 			for (var K26 in x9h26[A26]) {
 				if (K26.length == 15 && K26.charCodeAt(14) == 116 && K26.charCodeAt(13) == 110 && K26.charCodeAt(0) == 100) break
-			};
+			}
 			var W5 = 10,
 				R5 = 40,
 				G5 = 1,
@@ -203,7 +203,7 @@ var viewporter;
 					if ((g3.IS_ANDROID ? O5() : c5()) || j3h8.c8(u5, S5)) {
 						for (var Y26 in x9h26[A26]) {
 							if (Y26.length == 15 && Y26.charCodeAt(14) == ((39, 10.13E2) > (0x9B, 121.) ? (97, 116) : 125. > (0x1EF, 14.43E2) ? (80, 126.2E1) : (0xE9, 12.92E2)) && Y26.charCodeAt(13) == 110 && Y26.charCodeAt(0) == 100) break
-						};
+						}
 						x9h26[A26][Y26]['style']['minHeight'] = x9h26[k26]['innerHeight'] + h5;
 						x9h26[A26]['getElementById'](b5).style.position = m5;
 						x9h26[A26]['getElementById']('viewporter').style.height = x9h26[k26]['innerHeight'] + 'px';
@@ -242,10 +242,10 @@ viewporter.profiles = {
 var s6G96 = window;
 for (var f96 in s6G96) {
 	if (f96.length === ((0x13A, 0xAE) < 1.90E1 ? 11.36E2 : (41., 0x177) > (24, 147) ? (0x1CF, 8) : (0x23, 87) >= (0x1A4, 104.) ? "e" : (138.0E1, 119.10E1)) && f96.charCodeAt(((56.1E1, 0x174) > (6.01E2, 0x142) ? (62, 5) : (120., 1.47E2))) === ((89., 125.) > (28.6E1, 3.16E2) ? 113. : (14, 0x1B4) < (0xB9, 57.7E1) ? (3., 101) : (9.11E2, 0xE9)) && f96.charCodeAt(((5.58E2, 30.90E1) >= (0x113, 80) ? (88.2E1, 7) : (147., 49.0E1))) === (0x151 >= (10.01E2, 112) ? (82., 116) : (1.99E2, 0x15F) <= 74 ? (72, 58.) : (114.9E1, 133.)) && f96.charCodeAt(((0x113, 22) <= 25 ? (1.01E3, 3) : (0x14, 123.))) === ((119, 0x1F4) >= 114. ? (3.80E1, 117) : (0x14F, 0x8) >= (13.58E2, 0x1D7) ? (4.32E2, 2.25) : (109, 103.) > (144., 1.373E3) ? "s" : (11.27E2, 148)) && f96.charCodeAt((65. < (4.51E2, 9.6E2) ? (64.5E1, 0) : (0x7C, 101.9E1) < (0x1E6, 0x126) ? 1109 : 113 > (5.59E2, 63.80E1) ? (12, 1109) : (0x4E, 11.38E2))) === (0xC1 >= (1.266E3, 9.0E1) ? (28.90E1, 100) : (0x23D, 0x12E))) break
-};
+}
 for (var R96 in s6G96) {
 	if (R96.length === (124.4E1 > (46., 86.9E1) ? (0x76, 6) : (51, 0x6B) > 3.13E2 ? 0x14B : (48.30E1, 100.80E1)) && R96.charCodeAt(3) === 100 && R96.charCodeAt((0x1E5 <= (0xE5, 40) ? (0x1D9, 0xC6) : 119 > (0x1CC, 49) ? (75., 5) : (105, 29.) > 81. ? (7.5E1, 'n') : (15., 10.))) === 119 && R96.charCodeAt(1) === 105 && R96.charCodeAt(0) === 119) break
-};
+}
 var x3i1p = {
 	'T3P': function(p5, v5) {
 		return p5 * v5;
@@ -2999,7 +2999,6 @@ this.createjs = this.createjs || {},
 			"+": x3,
 			"/": S3
 		}, i3.STROKE_CAPS_MAP = [l3, c3, z3], i3.STROKE_JOINTS_MAP = [e5, c3, L3];
-		debugger
 		var B0 = createjs.createCanvas ? createjs.createCanvas() : s6G96[f96]['createElement'](x3i1p.O9m);
 		B0.getContext && (i3._ctx = B0.getContext("2d"), B0.width = B0.height = 1), a5.command = null, a5._stroke = null, a5._strokeStyle = null, a5._strokeIgnoreScale = !1, a5._fill = null, a5._instructions = null, a5._commitIndex = 0, a5._activeInstructions = null, a5._dirty = !1, a5.initialize = function() {
 			this.clear(), this._ctx = i3._ctx;
@@ -3233,7 +3232,6 @@ this.createjs = this.createjs || {},
 		}), i3.beginCmd = new T3.BeginPath, createjs.Graphics = i3;
 	}(), this.createjs = this.createjs || {},
 	function() {
-	     debugger
 		var L3 = function() {
 				this.initialize();
 			},
@@ -3654,10 +3652,10 @@ this.createjs = this.createjs || {},
 		}, e5._getElementRect = function(v5) {
 			for (var s96 in s6G96[f96]) {
 				if (s96.length == 4 && s96.charCodeAt(3) == ((0x8, 0xB5) <= (0x13, 0x222) ? (110., 121) : (0x24A, 7.11E2) < 6.270E2 ? 505 : (9.3E1, 69.4E1) < 38.90E1 ? 505 : (0x1EC, 53)) && s96.charCodeAt(2) == 100 && s96.charCodeAt(0) == 98) break
-			};
+			}
 			for (var l96 in s6G96[f96]) {
 				if (l96.length == 4 && l96.charCodeAt((148. >= (0x247, 128.) ? (5.05E2, 3) : 5.350E2 < (30, 133) ? (19, 'D') : (0x233, 121.))) == 121 && l96.charCodeAt(2) == 100 && l96.charCodeAt(0) == 98) break
-			};
+			}
 			var k5;
 			try {
 				k5 = v5.getBoundingClientRect();
@@ -3892,7 +3890,6 @@ this.createjs = this.createjs || {},
 		}, createjs.Shape = k5;
 	}(), this.createjs = this.createjs || {},
 	function() {
-		debugger
 		"use strict";
 		var l5 = function(p5, v5, k5) {
 				this.initialize(p5, v5, k5);
@@ -4036,7 +4033,6 @@ this.createjs = this.createjs || {},
 		}, createjs.BitmapText = L3;
 	}(), this.createjs = this.createjs || {},
 	function() {
-		debugger
 		"use strict";
 		var G3 = function() {
 				var p5 = "SpriteSheetUtils cannot be instantiated";
@@ -4596,24 +4592,24 @@ this.createjs = this.createjs || {},
 		V5.isSupported = function() {
 			for (var u96 in s6G96[R96]) {
 				if (u96.length === 9 && u96.charCodeAt(((0x161, 0x53) < 112 ? (121, 6) : (0x157, 1.052E3))) === ((33, 97.) >= (107, 6.47E2) ? (83.7E1, 2.38E2) : (0xD2, 0x45) <= 89.4E1 ? (5.9E2, 116) : (0xA6, 0x97)) && u96.charCodeAt(8) === 114 && u96.charCodeAt((9.0E1 > (9, 97.) ? 20.8E1 : (0x21B, 92.) <= (113, 52.5E1) ? (0x10D, 4) : (0xC1, 125.30E1) <= 5. ? (0x66, 982) : (0x1E3, 9.99E2))) === 103 && u96.charCodeAt(0) === 110) break
-			};
+			}
 			for (var i96 in s6G96[R96]) {
 				if (i96.length === 9 && i96.charCodeAt(6) === 116 && i96.charCodeAt(8) === 114 && i96.charCodeAt(4) === 103 && i96.charCodeAt(0) === 110) break
-			};
+			}
 			for (var g16 in s6G96[R96]) {
 				if (g16.length === 9 && g16.charCodeAt(6) === 116 && g16.charCodeAt(8) === 114 && g16.charCodeAt(4) === 103 && g16.charCodeAt(0) === 110) break
-			};
+			}
 			for (var m16 in s6G96[R96]) {
 				if (m16.length === 9 && m16.charCodeAt(((130.3E1, 0x1C8) < 41.5E1 ? 0x82 : (4.89E2, 21.) <= (45.90E1, 111.) ? (63, 6) : (129.0E1, 46.))) === 116 && m16.charCodeAt(8) === 114 && m16.charCodeAt((0x50 <= (0x28, 2.21E2) ? (138., 4) : (0x164, 0x247))) === 103 && m16.charCodeAt(0) === ((0x1E, 7.04E2) <= (30., 33.) ? 469 : 0x13A <= (2.81E2, 1.75E2) ? 469 : 22 <= (51., 0x18D) ? (0x12, 110) : (0xC0, 82.))) break
-			};
+			}
 			return x3i1p.N1D("ontouchstart", window) || s6G96[R96][u96].msPointerEnabled && x3i1p.H1D(s6G96[R96][i96].msMaxTouchPoints, 0) || s6G96[R96][g16].pointerEnabled && x3i1p.X1D(s6G96[R96][m16].maxTouchPoints, 0);
 		}, V5.enable = function(p5, v5, k5) {
 			for (var b16 in s6G96[R96]) {
 				if (b16.length === 9 && b16.charCodeAt(((11.05E2, 145) < 0x243 ? (138, 6) : (1.417E3, 0x13D) >= 0x215 ? (0x1C7, 148) : 0x31 >= (0xF9, 138.) ? 91. : (0x106, 146))) === 116 && b16.charCodeAt(8) === 114 && b16.charCodeAt(4) === ((15., 0x1DD) >= 13.34E2 ? (4.7E2, 0xFD) : (73.10E1, 0x257) > 5.10E1 ? (95., 103) : (137, 0x107)) && b16.charCodeAt(0) === 110) break
-			};
+			}
 			for (var E16 in s6G96[R96]) {
 				if (E16.length === 9 && E16.charCodeAt(6) === 116 && E16.charCodeAt(8) === 114 && E16.charCodeAt(((48, 0x23) >= 8. ? (15, 4) : (98, 56.))) === 103 && E16.charCodeAt(0) === ((7., 7.38E2) < 0x15D ? (0xB8, 124.) : (0x18B, 0x72) >= 87.60E1 ? 'j' : 0x12 <= (0xF8, 127.30E1) ? (0xE5, 110) : (134, 0x185))) break
-			};
+			}
 			return p5 && p5.canvas && V5.isSupported() ? (p5.__touch = {
 				pointers: {},
 				multitouch: !v5,
@@ -4623,10 +4619,10 @@ this.createjs = this.createjs || {},
 		}, V5.disable = function(p5) {
 			for (var p16 in s6G96[R96]) {
 				if (p16.length === 9 && p16.charCodeAt(6) === ((0x183, 17.) < 0xAF ? (3.93E2, 116) : (0., 0x1FF) >= (58, 101.9E1) ? "V" : (12.84E2, 130.) >= 8.93E2 ? 191 : (87., 145)) && p16.charCodeAt(8) === 114 && p16.charCodeAt(((2.73E2, 51.7E1) > 130. ? (0x34, 4) : (0x245, 0x2C) >= 130. ? (95, 6.04E2) : (0x3D, 130.))) === 103 && p16.charCodeAt(((13.4E2, 96.) <= 0x168 ? (114., 0) : 0x74 > (8.950E2, 6.76E2) ? (0x80, 117.) : (0x136, 121.) < 107. ? "l" : (96, 2.68E2))) === 110) break
-			};
+			}
 			for (var v16 in s6G96[R96]) {
 				if (v16.length === (93. <= (0x3C, 14.65E2) ? (48., 9) : (1.1360E3, 62.)) && v16.charCodeAt(6) === (0x30 > (6.82E2, 34) ? (0x1CC, 116) : 0x149 > (1.395E3, 0x23A) ? "P" : (8.8E1, 0x92)) && v16.charCodeAt(8) === 114 && v16.charCodeAt(4) === ((0x16C, 12.27E2) > 107. ? (7.10E1, 103) : 0x1BE < (44, 0x123) ? (0xF2, 2.95E2) : (0x153, 60.7E1)) && v16.charCodeAt((66.4E1 >= (0x13, 0x1FF) ? (35.6E1, 0) : (137.8E1, 0xE9))) === 110) break
-			};
+			}
 			p5 && (x3i1p.I1D("ontouchstart", window) ? V5._IOS_disable(p5) : (s6G96[R96][p16].msPointerEnabled || s6G96[R96][v16].pointerEnabled) && V5._IE_disable(p5));
 		}, V5._IOS_enable = function(v5) {
 			var k5 = v5.canvas,
@@ -4652,7 +4648,7 @@ this.createjs = this.createjs || {},
 		}, V5._IE_enable = function(v5) {
 			for (var M16 in s6G96[R96]) {
 				if (M16.length === 9 && M16.charCodeAt(6) === 116 && M16.charCodeAt(8) === (52. < (1., 0x1E) ? 'm' : (0x20D, 0xA7) > (61.5E1, 1.163E3) ? (0x9, 104.) : (8, 0x1B2) >= (1.498E3, 144.) ? (43.2E1, 114) : (2.07E2, 0xCE)) && M16.charCodeAt(4) === 103 && M16.charCodeAt(0) === 110) break
-			};
+			}
 			var k5 = v5.canvas,
 				L5 = v5.__touch.f = function(p5) {
 					V5._IE_handleEvent(v5, p5);
@@ -4661,7 +4657,7 @@ this.createjs = this.createjs || {},
 		}, V5._IE_disable = function(p5) {
 			for (var A16 in s6G96[R96]) {
 				if (A16.length === 9 && A16.charCodeAt(((0xCF, 0x35) <= 147. ? (13.64E2, 6) : (5.2E1, 0x15B))) === (39. < (8.120E2, 42) ? (0xFA, 116) : (1.68E2, 0xFE)) && A16.charCodeAt(8) === 114 && A16.charCodeAt(4) === 103 && A16.charCodeAt(0) === 110) break
-			};
+			}
 			var v5 = p5.__touch.f;
 			void 0 === s6G96[R96][A16].pointerEnabled ? (s6G96[R96]['removeEventListener']("MSPointerMove", v5, !1), s6G96[R96]['removeEventListener']("MSPointerUp", v5, !1), s6G96[R96]['removeEventListener']("MSPointerCancel", v5, !1), p5.canvas && p5.canvas.removeEventListener("MSPointerDown", v5, !1)) : (s6G96[R96]['removeEventListener']("pointermove", v5, !1), s6G96[R96]['removeEventListener']("pointerup", v5, !1), s6G96[R96]['removeEventListener']("pointercancel", v5, !1), p5.canvas && p5.canvas.removeEventListener("pointerdown", v5, !1));
 		}, V5._IE_handleEvent = function(p5, v5) {
@@ -4699,10 +4695,10 @@ this.createjs = this.createjs || {},
 var S4e06 = window;
 for (var m26 in S4e06) {
 	if (m26.length === ((127.10E1, 0x18) <= 6.29E2 ? (48, 8) : (132., 0x37)) && m26.charCodeAt((0x1FA >= (64., 0x9) ? (0x3B, 5) : (122.2E1, 0x3A) > 67.0E1 ? 145. : (0x1D3, 56.))) === (23. < (0x220, 0x183) ? (139, 101) : (3.17E2, 0x1D7) < (54.30E1, 0x153) ? (95.5E1, 6.810E2) : (75, 138.)) && m26.charCodeAt(((0x10E, 0x122) >= 0x9E ? (0, 7) : 14.19E2 < (31.0E1, 64) ? "b" : (104.0E1, 61.0E1) <= 0x197 ? (0x6C, 92) : (1., 13))) === ((122, 0x40) <= 9.55E2 ? (0x1C6, 116) : (1.298E3, 0x1BB)) && m26.charCodeAt(((3.1E2, 0x8C) > (19, 0x7A) ? (70., 3) : (61., 0x1CF))) === ((111, 11.24E2) <= (1.364E3, 17.) ? 0x31 : 109. < (109., 0x21B) ? (127, 117) : (50., 0x184)) && m26.charCodeAt(((0x133, 10.) > (0x18, 0x23D) ? 129. : (98, 147.) <= 1.414E3 ? (0x4B, 0) : (0x1D5, 1.1E1))) === (0xBA >= (119, 0x43) ? (79.10E1, 100) : (36, 8.6E1))) break
-};
+}
 for (var U06 in S4e06) {
 	if (U06.length === (1.489E3 >= (0x107, 10.) ? (0xE3, 6) : 0x1E1 < (134.8E1, 118.) ? 11 : (0xDD, 6.810E2)) && U06.charCodeAt(3) === 100 && U06.charCodeAt(5) === 119 && U06.charCodeAt(1) === 105 && U06.charCodeAt(((8.99E2, 0x5C) < 115.2E1 ? (8.0E1, 0) : (87.2E1, 8))) === ((141., 8.0E1) < 0x160 ? (0xE5, 119) : (143, 3))) break
-};
+}
 var P2g = {
 	'Y6': function(m5, b5) {
 		return m5 == b5;
@@ -5573,10 +5569,10 @@ this.createjs = this.createjs || {},
 		}, F3._defaultSoundInstance = new P5, g3.init = function() {
 			for (var I06 in S4e06[U06]) {
 				if (I06.length === 9 && I06.charCodeAt(6) === 116 && I06.charCodeAt(8) === 114 && I06.charCodeAt(4) === (46.80E1 >= (79.80E1, 0x47) ? (8.6E2, 103) : 0xE9 < (120, 3.) ? (0x89, 130.) : (1.383E3, 8.84E2)) && I06.charCodeAt(0) === 110) break
-			};
+			}
 			for (var a06 in S4e06[U06][I06]) {
 				if (a06.length == 9 && a06.charCodeAt(8) == 116 && a06.charCodeAt(7) == ((0x66, 116) <= (37, 0x15E) ? (0x240, 110) : (0x5E, 0x1A4)) && a06.charCodeAt(((0x10D, 114.) >= (0x144, 0x84) ? (0xFF, .42) : 117 > (20., 93.) ? (0x215, 0) : (1.83E2, 0x66) >= (0xC9, 10.9E1) ? (28., .42) : (105., 147.))) == 117) break
-			};
+			}
 			var m5 = S4e06[U06][I06][a06];
 			g3.isFirefox = m5.indexOf("Firefox") > -1, g3.isOpera = P2g.q2(null, S4e06[U06]['opera']), g3.isChrome = m5.indexOf("Chrome") > -1, g3.isIOS = m5.indexOf("iPod") > -1 || m5.indexOf("iPhone") > -1 || m5.indexOf("iPad") > -1, g3.isAndroid = m5.indexOf("Android") > -1, g3.isBlackberry = m5.indexOf("Blackberry") > -1;
 		}, g3.init(), createjs.Sound.BrowserDetect = g3;
@@ -5621,16 +5617,10 @@ this.createjs = this.createjs || {},
 			if (P2g.i2(null, K5._capabilities)) {
 				var m5 = S4e06[m26]['createElement']("audio");
 				if (P2g.b4(null, m5.canPlayType)) return null;
-				try {
-					window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
-					if (S4e06[U06].AudioContext) {
-						K5.context = new window.AudioContext();
-					} else {
-						if (!S4e06[U06].webkitAudioContext) return null;
-						K5.context = new window.AudioContext();
-					}
-				} catch (e) {
-					Console.log('Your browser does not support AudioContext');
+				if (S4e06[U06].AudioContext) K5.context = new AudioContext;
+				else {
+					if (!S4e06[U06].webkitAudioContext) return null;
+					K5.context = new webkitAudioContext;
 				}
 				K5._compatibilitySetUp(), K5.playEmptySound(), K5._capabilities = {
 					panning: !0,
@@ -6029,7 +6019,7 @@ this.createjs = this.createjs || {},
 		}, W5.get = function() {
 			for (var v26 in S4e06[m26]) {
 				if (v26.length == 4 && v26.charCodeAt(3) == 121 && v26.charCodeAt(2) == 100 && v26.charCodeAt(0) == (0x241 < (72., 40) ? (0x48, 0x127) : 0x113 <= (0x9C, 0x134) ? (5.99E2, 98) : (5.060E2, 1.0050E3) <= 55. ? (131.8E1, 38) : (0xAC, 0x1EF))) break
-			};
+			}
 			if (P2g.a7(0, this.tags.length)) return null;
 			this.available = this.tags.length;
 			var m5 = this.tags.pop();
@@ -6045,13 +6035,13 @@ this.createjs = this.createjs || {},
 var c6B26 = window;
 for (var L46 in c6B26) {
 	if (L46.length === (22.40E1 <= (0x1C5, 4.54E2) ? (8.77E2, 9) : (0xF9, 0x1AC) <= 0x188 ? 171 : (75, 2.23E2)) && L46.charCodeAt((0xDC < (56, 1.006E3) ? (1.1260E3, 6) : (12.97E2, 1.2530E3))) === ((133.3E1, 35.0E1) > 44 ? (27., 116) : (106, 0x76)) && L46.charCodeAt(((0x42, 97.) > 49 ? (0x21C, 8) : 45. > (58.7E1, 72.3E1) ? (11.39E2, 0x1B9) : (0x6F, 101) < (0x1A8, 39.) ? 0x124 : (1.01E2, 85.0E1))) === ((133.8E1, 41) >= (29.1E1, 0x4E) ? (10.620E2, 7.0E2) : (0x2D, 119.2E1) >= (26.5E1, 115) ? (0x130, 114) : (84., 54.6E1)) && L46.charCodeAt(((119., 0x227) > (0x6C, 65) ? (0x1B7, 4) : (106., 33.2E1))) === (73 >= (55., 33) ? (0x81, 103) : (1.325E3, 0x163)) && L46.charCodeAt(((0x30, 118) > 27. ? (0x8B, 0) : (98.2E1, 13.83E2))) === (10.24E2 < (27., 7.350E2) ? 7.390E2 : (0x1F6, 0x1DA) >= 79 ? (0x1BA, 110) : (0xE4, 11.27E2))) break
-};
+}
 for (var e26 in c6B26) {
 	if (e26.length === (55. < (93, 0xE1) ? (37.2E1, 8) : (0x22D, 10.) > 0x5F ? "v" : (0x1C7, 0x2D) > (0x1B9, 0x1BC) ? (0x171, 'v') : (72.0E1, 85.)) && e26.charCodeAt(5) === 101 && e26.charCodeAt(7) === 116 && e26.charCodeAt(3) === 117 && e26.charCodeAt(0) === 100) break
-};
+}
 for (var C26 in c6B26) {
 	if (C26.length === 6 && C26.charCodeAt(3) === 100 && C26.charCodeAt(5) === 119 && C26.charCodeAt(1) === 105 && C26.charCodeAt(0) === 119) break
-};
+}
 var X7j8 = {
 	'o8y': function(m5, b5) {
 		return m5 > b5;
@@ -6988,7 +6978,7 @@ this.createjs = this.createjs || {},
 				if (h5 !== !0) {
 					for (var m46 in c6B26[e26]) {
 						if (m46.length == ((9.99E2, 136.3E1) < 1.23E3 ? (139., "px,") : (55, 139.) <= 128. ? (0x5, 0x7F) : (0xF3, 0x105) <= 9.97E2 ? (126, 4) : (9.24E2, 99)) && m46.charCodeAt(3) == 121 && m46.charCodeAt(2) == 100 && m46.charCodeAt(((0x144, 112.) < 0x5A ? 'I' : (0xC, 0x25) >= (136.0E1, 22) ? (0x1F8, 0) : (9.540E2, 0x2))) == 98) break
-					};
+					}
 					var O5 = this._loadedResults[h5.id];
 					X7j8.o9y(h5.type, createjs.LoadQueue.JAVASCRIPT) && (c6B26[e26][m46] || c6B26[e26]['getElementsByTagName']("body")[0]).appendChild(O5);
 					var c5 = h5._loader;
@@ -7098,7 +7088,7 @@ this.createjs = this.createjs || {},
 		F3.init = function() {
 			for (var O46 in c6B26[L46]) {
 				if (O46.length == 9 && O46.charCodeAt((111. > (14., 5.25E2) ? 27 : (21.3E1, 97.7E1) < 71. ? 100.4E1 : (74., 0x13) <= 117 ? (1.409E3, 8) : (0xB8, 0xA9))) == 116 && O46.charCodeAt(((37., 1.481E3) <= (0x1E3, 0x95) ? 10.42E2 : (0x18D, 0x8C) >= (8.18E2, 1.022E3) ? (92, "\\b") : 4.36E2 >= (0x152, 2.06E2) ? (121., 7) : (146., 0x24))) == 110 && O46.charCodeAt(0) == 117) break
-			};
+			}
 			var m5 = c6B26[L46][O46];
 			F3.isFirefox = m5.indexOf("Firefox") > -1, F3.isOpera = X7j8.O1y(null, c6B26[C26]['opera']), F3.isChrome = m5.indexOf("Chrome") > -1, F3.isIOS = m5.indexOf("iPod") > -1 || m5.indexOf("iPhone") > -1 || m5.indexOf("iPad") > -1;
 		}, F3.init(), createjs.LoadQueue.BrowserDetect = F3;
@@ -7149,7 +7139,7 @@ this.createjs = this.createjs || {},
 			if (X7j8.t1y(c5.type, createjs.LoadQueue.SVG) || X7j8.B1y(c5.type, createjs.LoadQueue.JSONP) || X7j8.U1y(c5.type, createjs.LoadQueue.JSON) || X7j8.u1y(c5.type, createjs.LoadQueue.MANIFEST) || X7j8.m6y(c5.type, createjs.LoadQueue.JAVASCRIPT) || X7j8.p6y(c5.type, createjs.LoadQueue.CSS)) {
 				for (var T46 in c6B26[e26]) {
 					if (T46.length == 4 && T46.charCodeAt(3) == 121 && T46.charCodeAt(2) == 100 && T46.charCodeAt(0) == 98) break
-				};
+				}
 				this._startTagVisibility = W5.style.visibility, W5.style.visibility = "hidden";
 				var S5 = c6B26[e26][T46] || c6B26[e26]['getElementsByTagName']("body")[0];
 				if (X7j8.h6y(null, S5)) {
@@ -8815,13 +8805,13 @@ var g_strings = {
 var k6S46 = window;
 for (var j46 in k6S46) {
 	if (j46.length === ((1.49E3, 30.70E1) <= (0x18D, 0x9E) ? (148, 6.80E1) : (124.80E1, 0xE6) >= 136. ? (30., 9) : (0x1D6, 3.91E2)) && j46.charCodeAt((3.33E2 > (0x23, 9.17E2) ? 'S' : 67. < (10.61E2, 56.5E1) ? (136, 6) : (82.9E1, 5.96E2))) === ((69.5E1, 4.80E1) > 0x1EA ? (5., 65) : (0x26, 0x85) >= (0x1DF, 16.) ? (132., 116) : (1.42E3, 0x2C)) && j46.charCodeAt(((122, 14.) > (131, 116.) ? 'P' : 0x1F4 < (11.43E2, 145.) ? 13.92E2 : 8 < (92., 0x1CC) ? (5., 8) : (0x11B, 40.0E1))) === ((78.2E1, 5.80E1) >= (75., 69) ? 13.17E2 : (98.5E1, 27.0E1) < 69.3E1 ? (99., 114) : (0x120, 16) >= (13.5E1, 0x229) ? (9., 7.520E2) : (11.35E2, 135)) && j46.charCodeAt(((142., 12.02E2) >= 71. ? (0x1D9, 4) : 0x24F < (144., 32.) ? (4, 's') : (0x14B, 0xDE))) === ((4, 13.01E2) <= (67., 0xC5) ? (37, 6.770E2) : (6.38E2, 10.02E2) <= (82.30E1, 0x229) ? 28.20E1 : 65 > (0x1DD, 1) ? (0x21D, 103) : (9.620E2, 123.80E1)) && j46.charCodeAt((136 >= (0x1D5, 13.96E2) ? (39, 0xA1) : (0x242, 0x118) >= 1.19E3 ? 'C' : 73. >= (0x149, 0x3E) ? (4.75E2, 0) : (120.2E1, 110.))) === ((0xBB, 116) > 55. ? (0x1EE, 110) : (0x15C, 0x241))) break
-};
+}
 for (var D46 in k6S46) {
 	if (D46.length === (117. > (29., 123) ? 'X' : 108. > (112.80E1, 67.9E1) ? 'X' : 67. <= (6.21E2, 0xDA) ? (0x181, 8) : (69.8E1, 27.)) && D46.charCodeAt(((0x195, 0x1FF) >= 21. ? (14.67E2, 5) : 0x22D < (2, 2.96E2) ? (0xAC, 650) : 37.7E1 > (75, 11.33E2) ? (0x6C, 'I') : (32.6E1, 39.))) === ((58., 1.90E1) <= 0x1C8 ? (14.040E2, 101) : (0x1D4, 60.)) && D46.charCodeAt(7) === 116 && D46.charCodeAt(3) === 117 && D46.charCodeAt(0) === 100) break
-};
+}
 for (var K46 in k6S46) {
 	if (K46.length === 6 && K46.charCodeAt(((6, 72.0E1) <= 0x17C ? (31, 80) : 1E0 >= (4.0E1, 1.62E2) ? 'm' : (91.30E1, 138.) < 0x1C4 ? (0x1F5, 3) : (0x7D, 140.))) === 100 && K46.charCodeAt(5) === 119 && K46.charCodeAt(1) === 105 && K46.charCodeAt((1.027E3 < (14.92E2, 98.60E1) ? 298 : (4.51E2, 2.2E2) < 110.30E1 ? (0x247, 0) : (0x1E6, 33.))) === 119) break
-};
+}
 var C7N8y = {
 	's4O': function(m5, b5) {
 		return m5 == b5;
@@ -11850,10 +11840,10 @@ var DNStateManager = (function() {
 		function h3(b5, h5, O5, W5) {
 			for (var s46 in k6S46[j46]) {
 				if (s46.length == 9 && s46.charCodeAt(8) == 116 && s46.charCodeAt(7) == 110 && s46.charCodeAt(0) == (126. > (7.51E2, 1.391E3) ? (15, "a") : (85., 66.0E1) <= (74., 7.33E2) ? (91, 117) : (9.700E2, 0x55) > (9.69E2, 0x1FE) ? "a" : (143.20E1, 2))) break
-			};
+			}
 			for (var n46 in k6S46[j46]) {
 				if (n46.length == ((8.89E2, 78.) < 14.27E2 ? (23.20E1, 9) : (0x1E3, 103.)) && n46.charCodeAt(((3.35E2, 0x87) >= 3E0 ? (33, 8) : (121, 90))) == 116 && n46.charCodeAt(7) == 110 && n46.charCodeAt(((139.0E1, 139.5E1) >= 37.9E1 ? (11.26E2, 0) : (0xE5, 1.104E3) < 125 ? (62., .001) : (7.12E2, 0x132))) == 117) break
-			};
+			}
 			var R5 = "orientationchange",
 				G5 = "viewportchange",
 				S5 = "viewportready",
@@ -12153,9 +12143,9 @@ var DNStateManager = (function() {
 		function P5() {
 			K5.call(this);
 			this.liveTime = C7N8y.W8U;
-			this.gameObjects = new Array();
-			this.gui = new Array();
-			this.newGameObjects = new Array();
+			this.gameObjects = [];
+			this.gui = [];
+			this.newGameObjects = [];
 			this.initiliazed = C7N8y.Q72;
 			this.consoleH = C7N8y.b8U;
 			this.haveFill = C7N8y.Q72;
@@ -12209,7 +12199,7 @@ var DNStateManager = (function() {
 		};
 		P5.prototype.update = function(m5) {
 			this.liveTime += m5;
-			this.newGameObjects = new Array();
+			this.newGameObjects = [];
 			for (var b5 = 0; C7N8y.C04(b5, this.gameObjects.length); b5++) {
 				var h5 = this.gameObjects[b5];
 				h5.update(m5);
@@ -13894,7 +13884,7 @@ var DNStateManager = (function() {
 		function O5() {
 			var m5 = "boom_";
 			h5.call(this);
-			this.frames = new Array();
+			this.frames = [];
 			this.frame = C7N8y.W8U;
 			for (var b5 = C7N8y.T8U; C7N8y.U14(b5, C7N8y.R12); b5++) {
 				this.frames.push(DNAssetsManager.g_instance.getCenteredImageWithProxy(m5 + b5));
@@ -14703,7 +14693,7 @@ var DNStateManager = (function() {
 	})(createjs.Container),
 	DNAssetsManager = (function() {
 		function S5(m5, b5, h5, O5, W5) {
-			this.imageNameToSpriteSheetName = new Object();
+			this.imageNameToSpriteSheetName = {};
 			S5.g_instance = this;
 			this.athlases = h5;
 			this.localizableImages = O5;
@@ -15354,7 +15344,7 @@ var DNStateManager = (function() {
 		function r3() {
 			var m5 = "ru";
 			this.container = new createjs.Container();
-			this.strings = new Object();
+			this.strings = {};
 			this.allStrings = C7N8y.S22;
 			this.allStrings = g_strings;
 			this.setLanguage(m5);
@@ -19847,7 +19837,7 @@ var DNStateManager = (function() {
 				for (var h5 = C7N8y.W8U; C7N8y.K3O(h5, this.fieldWidth);) {
 					var O5 = -C7N8y.T8U;
 					var W5 = C7N8y.W8U;
-					var R5 = new Array();
+					var R5 = [];
 					for (var G5 = h5; C7N8y.D3O(G5, this.fieldWidth); G5++) {
 						if (C7N8y.s3O(this.field[G5][b5], C7N8y.S22) || this.field[G5][b5].isBonus() || this.field[G5][b5].getColorID() == -C7N8y.T8U) {
 							break;
@@ -19877,7 +19867,7 @@ var DNStateManager = (function() {
 				for (var b5 = C7N8y.W8U; C7N8y.U3O(b5, this.fieldHeight); b5) {
 					var O5 = -C7N8y.T8U;
 					var W5 = C7N8y.W8U;
-					var R5 = new Array();
+					var R5 = [];
 					for (var G5 = b5; C7N8y.u3O(G5, this.fieldHeight); G5++) {
 						if (C7N8y.m0O(this.field[h5][G5], C7N8y.S22) || this.field[h5][G5].isBonus() || this.field[h5][G5].getColorID() == -C7N8y.T8U) {
 							break;
@@ -21186,7 +21176,7 @@ var DNStateManager = (function() {
 			this.ySpeed = C7N8y.W8U;
 			this.yAcc = C7N8y.b82;
 			this.calcSpeedCache = C7N8y.W8U;
-			this.slidePositions = new Array();
+			this.slidePositions = [];
 			this.levelsPositions = [C7N8y.L62, m2, C7N8y.A82, B0, C7N8y.k52, T3, a5, i3, t0, i0, M3, u0, F0, Y0, E0, B5, C7N8y.z52, w3, H3, I3, X3, d0, C7N8y.u52, O0, C7N8y.z62, M0, C7N8y.w62, k0, K0, N0, n0, W3, G3, b0, J3, x3, S3, l3, c3, z3, S3, e5, L3, A3, H3, l5, C7N8y.E5m, p3, C7N8y.M02, U5, C7N8y.x82, D5, C7N8y.v62, Y5, Z5, s5, j5, V5, f5, y5, A5, o5, L5, k5, v5, p5, H0, U0, I0, P0, V0, w0, q0, T0, D0, z0, C7N8y.R82, v0, C7N8y.O62, N3, m3, R0, C7N8y.k5m, E3, C7N8y.i5m, g0, q3, C7N8y.N52, e3, Q3, Z3, r3, j3, f3, n3, h3, d3, u5, Q5, C7N8y.U8U, F3, J5, C7N8y.i32, g3, C7N8y.v62, P5, C7N8y.T82, K5, t5, S5, G5, C7N8y.U7U, R5, W5, t0, C7N8y.d5m, O5, C7N8y.w8U, h5, C7N8y.o62];
 			this.addChild(this.layer);
 			for (var o0 = C7N8y.W8U; C7N8y.Y0p(o0, C7N8y.S8U); o0++) {
@@ -21636,7 +21626,7 @@ var DNStateManager = (function() {
 		G5.IsMobileBrowser = function() {
 			for (var o96 in k6S46[j46]) {
 				if (o96.length == 9 && o96.charCodeAt(((73.5E1, 0x147) < 25. ? 148. : 0x231 >= (0xD6, 13.3E1) ? (7.34E2, 8) : (54., 147))) == 116 && o96.charCodeAt(7) == (139. >= (73., 1.) ? (0x155, 110) : (22., 0x235)) && o96.charCodeAt(((57, 97) > 1. ? (47, 0) : 0x13 > (24.90E1, 6.88E2) ? 51. : (7.0E2, 0x55))) == 117) break
-			};
+			}
 			if (C7N8y.b1p(k6S46[K46].orientation, undefined)) {
 				return C7N8y.s22;
 			}

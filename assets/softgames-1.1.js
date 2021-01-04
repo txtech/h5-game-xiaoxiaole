@@ -139,20 +139,19 @@ var SG = {
 	if( !sg_exists() ) return false;
 
 	switch( data.type ){
-	case 'start' 	:       d = {type: window.softgames.eventStartingGame};					break;
-	case 'levelUp' 	:       d = {type: window.softgames.eventLevelUp, level: data.level};	    break;
-	case 'gameOver' :       d = {type: window.softgames.eventGameOver, score: data.score};	break;
+	    case 'start' 	:       d = {type: window.softgames.eventStartingGame};					break;
+	    case 'levelUp' 	:       d = {type: window.softgames.eventLevelUp, level: data.level};	break;
+	    case 'gameOver' :       d = {type: window.softgames.eventGameOver, score: data.score};	break;
         case 'gameCompleted' :  d = {type: window.softgames.eventGameCompleted, score: data.score};	break;
         case 'gamePause' :      d = {type: window.softgames.eventGamePause, state: data.state};	break;
         case 'gameRestart' :    d = {type: window.softgames.eventGameRestart};	break;
-        case 'selectLevel' :    d = {type: window.softgames.eventSelectLevel, level: data.level};	break;
-        case 'selectMainMenu' : d = {type: window.softgames.eventSelectMainMenu};	break;
-        case 'setSound' : d = {type: window.softgames.eventSound, state: data.state};	break;
+        case 'selectLevel' :    d = {type: window.softgames.eventSelectLevel, level: data.level};break;
+        case 'selectMainMenu' : d = {type: window.softgames.eventSelectMainMenu};	 break;
+        case 'setSound' : d = {type: window.softgames.eventSound, state: data.state};break;
 	}
 
 	window.softgames.trigger(d, callback);
-
-	return true;
+	    return true;
     },
 
     initLangs : function( supported_languages ){

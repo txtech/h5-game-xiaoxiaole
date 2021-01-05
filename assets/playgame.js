@@ -3265,7 +3265,6 @@ ShadeOutState = (function(b5) {
     //add by nada mode 1
     GameOverState = (function(u5) {
         function d3(b5, h5, O5) {
-            debugger
             var W5 = function() {
                 P5.x = -C7N8y.q62;
             };

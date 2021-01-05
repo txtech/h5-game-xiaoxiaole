@@ -9148,6 +9148,7 @@ var DNStateManager = (function() {
 		h3.prototype.onResize = function(m5) {
 			this.resizeTo(k6S46[K46]['innerWidth'], k6S46[K46]['innerHeight']);
 		};
+		//计算真实屏幕宽高（以1080*2400为例）(默认：700*900)
 		h3.prototype.resizeTo = function(m5, b5) {
 			if (C7N8y.o54(m5, b5)) {
 				Constants.SCREEN_SCALE = C7N8y.y54(m5, Constants.ASSETS_WIDTH, Constants.PIXEL_RATIO);
@@ -9452,6 +9453,7 @@ var DNStateManager = (function() {
 				}
 			}
 		};
+		//add by nada 居中对齐
 		P5.prototype.alignByCenter = function(m5) {
 			if (!Constants.g_isPC) {
 				this.y = C7N8y.i04((Constants.SCREEN_HEIGHT - Constants.ASSETS_HEIGHT), C7N8y.A8U);
@@ -9459,6 +9461,7 @@ var DNStateManager = (function() {
 				return;
 			}
 			if (m5) {
+				//add by nada (默认：700*900)
 				if (C7N8y.b24(Constants.ASSETS_HEIGHT, Constants.SCREEN_HEIGHT) && !this.haveFill) {
 					this.haveFill = C7N8y.s22;
 					var b5 = DNAssetsManager.g_instance.getImage(Images.FILL_BOTTOM);
@@ -9468,7 +9471,7 @@ var DNStateManager = (function() {
 					var O5 = C7N8y.N7U;
 					var W5 = C7N8y.v24((Constants.SCREEN_HEIGHT - Constants.ASSETS_HEIGHT), C7N8y.A8U);
 					b5.y = C7N8y.k24(Constants.ASSETS_HEIGHT, C7N8y.T8U);
-					h5.y = -O5 + C7N8y.T8U;
+					h5.y = C7N8y.K2w(-O5,C7N8y.y24(W5, O5)) + C7N8y.T8U;
 					if (C7N8y.O24(W5, O5)) {
 						b5.scaleY = (C7N8y.o24(W5, O5));
 						h5.scaleY = (C7N8y.y24(W5, O5));
@@ -12012,6 +12015,7 @@ var DNStateManager = (function() {
 		var G5 = function(m5) {
 			h5.haveMoreGames = m5;
 		};
+		//需要显示旋转屏幕吗
 		var S5 = function(m5) {
 			h5.needShowRotateScreen = m5;
 		};
@@ -12783,17 +12787,17 @@ var DNStateManager = (function() {
 				k6S46[K46]['localStorage'].setItem(this.BOOSTERS_COUNT,vboostersCount);
 				k6S46[K46]['localStorage'].setItem(this.GOLD,vgold);
 				//add by nada 更新游戏数据
-				NADA_Hooks.updateGameData(vgold,vtotalScore,vlevelsCompleted,vstarsPerLevel,vboostersCount);
+				NADA_Hooks.updateUserData(vgold,vtotalScore,vlevelsCompleted,vstarsPerLevel,vboostersCount);
 			} catch (m5) {
-				var q0 = "error NADA_Hooks updateGameData:"+m5;
+				var q0 = "error NADA_Hooks updateUserData:"+m5;
 				console.log(q0);
 			}
 		};
 		h3.prototype.load = function() {
 			try {
-				NADA_Hooks.initGameData(k6S46[K46]['localStorage']);
+				NADA_Hooks.initUserData(k6S46[K46]['localStorage']);
 			} catch (e) {
-				var q0 = "error NADA_Hooks initGameData" + e;
+				var q0 = "error NADA_Hooks initUserData" + e;
 				console.log(q0);
 			}
 			try {
@@ -12867,7 +12871,6 @@ var DNStateManager = (function() {
 	})(),
 	GameOverState = (function(u5) {
 		function d3(b5, h5, O5) {
-			debugger
 			var W5 = function() {
 				P5.x = -C7N8y.q62;
 			};

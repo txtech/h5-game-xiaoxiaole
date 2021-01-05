@@ -3,7 +3,7 @@ var NADA_GAME_CONFIG = {
     winRewardGold: 15
 };
 var NADA_Hooks = {
-    debug : true,
+    debug : false,
     gold : "GOLD",
     total_score: "TOTAL_SCORE",
     levels_completed: "LEVELS_COMPLETED",

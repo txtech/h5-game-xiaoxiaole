@@ -3,9 +3,9 @@ var SG_Lang = 'en';
 var SG = {
     loaded : false,
     debug : true,
-    lang 		   : 'en',
-    gameJS 	 	   : [],
-    d 		 	   : document,
+    lang  : 'en',
+    gameJS: [],
+    d : document,
     loadScrnTimer  : 10,
     boot : function(){
         SG.initLangs(window.gameLangs);
@@ -19,20 +19,16 @@ var SG = {
     startGame : function(){
         if( SG.loaded ) return;
         SG.loaded = true;
-
         SG.showSpinner();
-
         if(typeof window.gamePreLoader == "function"){
             window.gamePreLoader();
         }
-
         SG.loadJsFiles(window.gameJS, function(){
             SG.hideLoadScrn();
             if(window.gameOnLoadScript){
             eval(window.gameOnLoadScript); // dear future me, i am deeply sorry!
             }
         });
-
     },
     showSpinner : function(){
         //SG.d.getElementById('sg-spinner').setAttribute('class','');
@@ -49,14 +45,12 @@ var SG = {
 	    spin.setAttribute('id', 'sg-spinner');
             loadScrn.appendChild(spin);
         }
-
         if(window.location.href.indexOf("adultcontent") != -1){
             var text = SG.d.createElement('div');
             text.setAttribute('id', 'sg-loadtext');
             text.innerHTML = 'One moment please...<br>Your site is almost loaded!';
             loadScrn.appendChild(text);
         }
-
         var displayLoadScrn = function(){
             var body = SG.d.getElementsByTagName('body')[0];
             if( typeof body != "undefined" ){
@@ -71,7 +65,6 @@ var SG = {
                 setTimeout(displayLoadScrn,SG.loadScrnTimer);
             }
         };
-
         displayLoadScrn();
     },
     hideLoadScrn : function(){
@@ -99,7 +92,6 @@ var SG = {
                         if (head && script.parentNode) {
                             head.removeChild(script);
                         }
-
                         SG.loadJsFiles(files, callback);
                     }
             };

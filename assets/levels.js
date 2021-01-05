@@ -4023,6 +4023,7 @@ Levels = (function() {
         bombProb: C7N8y.W8U,
         bombCounter: C7N8y.J12
     };
+    //第一级
     K5.LEVEL_FIRST = {
         "form": [
             [C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U],
@@ -4087,6 +4088,7 @@ Levels = (function() {
         "bombProb": C7N8y.W8U,
         "bombCounter": C7N8y.J12
     };
+    //炸弹时间
     K5.BOMBS_AN_TIME = {
         form: [
             [C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U],
@@ -4119,6 +4121,7 @@ Levels = (function() {
         bombProb: C7N8y.q72,
         bombCounter: C7N8y.J12
     };
+    //得分和时间
     K5.SCORE_AND_TIME = {
         form: [
             [C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U],
@@ -4151,6 +4154,7 @@ Levels = (function() {
         bombProb: C7N8y.W8U,
         bombCounter: C7N8y.J12
     };
+    //努力得分
     K5.JUST_SCORE_HARD = {
         form: [
             [C7N8y.W8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.W8U],
@@ -4183,6 +4187,7 @@ Levels = (function() {
         bombProb: C7N8y.W8U,
         bombCounter: C7N8y.J12
     };
+    //趣的巧克力
     K5.FUN_CHOCO_HARD = {
         form: [
             [C7N8y.W8U, C7N8y.W8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.T8U, C7N8y.W8U, C7N8y.T8U, C7N8y.W8U],
@@ -6406,6 +6411,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //轰炸一次
     BOMBS_AN_TIME = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6438,6 +6444,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.R6U,
         "bombCounter": M5Y8y.T7U
     },
+    //得分和时间
     SCORE_AND_TIME = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6470,6 +6477,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //努力得分
     JUST_SCORE_HARD = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -6502,6 +6510,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //有趣的巧克力
     FUN_CHOCO_HARD = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -6534,6 +6543,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //中等难度
     MIDDLE_FUN = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6648,6 +6658,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //时间到了
     CLEAR_FOR_TIME = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -6689,6 +6700,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //草莓
     STRAWBERRY_EDU = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6721,6 +6733,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //石头
     STONE_EDU = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6753,6 +6766,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //清除
     CLEAR_EDU = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6785,6 +6799,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //简单清理
     CLEAR_SIMPLE = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6817,6 +6832,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //就这么简单
     JUST_SIMPLE = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -6849,6 +6865,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //一切都很简单
     ALL_BUT_SIMPLE = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -6881,6 +6898,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.C6U,
         "bombCounter": M5Y8y.T7U
     },
+    //中等
     JUST_MID = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -6913,6 +6931,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //随机
     HARD_RAND = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -6954,6 +6973,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //一点都不难
     BIT_RANDOM_HARD = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -7027,6 +7047,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //很多炸弹
     LOT_OF_BOMBS = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -7059,6 +7080,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //中层
     MID_LEVEL = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
@@ -7100,6 +7122,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //国际象棋
     CHESS = {
         "form": [
             [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
@@ -7141,6 +7164,7 @@ var LEVEL_1 = {
         "bombProb": M5Y8y.s6U,
         "bombCounter": M5Y8y.T7U
     },
+    //黄色表示时间
     YELLOW_FOR_TIME = {
         "form": [
             [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],

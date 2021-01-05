@@ -4,8 +4,8 @@ var SG_Hooks = {
         SG_Hooks.debug && console.log('Hooks game languag');
 		return SG.initLangs(supportedLanguages);
 	},
-	start : function(){
-        SG_Hooks.debug && console.log('Hooks game started');
+	start : function(t){
+        SG_Hooks.debug && console.log('Hooks game started:'+t);
         SG.trigger({type:'start'});
 	},
     //add by nada 添加 gold 金币参数

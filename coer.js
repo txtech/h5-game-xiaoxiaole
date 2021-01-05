@@ -14819,7 +14819,10 @@ var DNStateManager = (function() {
 				SG_Hooks.setResizeHandler(function() {
 					DNStateManager.g_instance.onResize(C7N8y.S22);
 				});
-			} catch (m5) {}
+			} catch (m5) {
+				var q0 = "error SG_Hooks;";
+				console.log(q0);
+			}
 		};
 		h5.submitHighScore = function(m5) {};
 		h5.showLeaderboards = function() {};
@@ -15563,17 +15566,31 @@ var DNStateManager = (function() {
 		h3.prototype.save = function() {
 			try {
 				debugger
-				k6S46[K46]['localStorage'].setItem(this.LEVELS_COMPLETED, this.levelsCompleted.toString());
-				k6S46[K46]['localStorage'].setItem(this.TOTAL_SCORE, this.totalScore.toString());
-				k6S46[K46]['localStorage'].setItem(this.STARS_PER_LEVEL, JSON.stringify(this.starsPerLevel));
-				k6S46[K46]['localStorage'].setItem(this.BOOSTERS_COUNT, JSON.stringify(this.boostersCount));
-				k6S46[K46]['localStorage'].setItem(this.GOLD, this.gold.toString());
-			} catch (m5) {}
+				var vgold = this.gold.toString();
+				var vtotalScore = this.totalScore.toString();
+				var vlevelsCompleted = this.levelsCompleted.toString();
+				var vstarsPerLevel = JSON.stringify(this.starsPerLevel);
+				var vboostersCount = JSON.stringify(this.boostersCount);
+				k6S46[K46]['localStorage'].setItem(this.LEVELS_COMPLETED,vlevelsCompleted);
+				k6S46[K46]['localStorage'].setItem(this.TOTAL_SCORE,vtotalScore);
+				k6S46[K46]['localStorage'].setItem(this.STARS_PER_LEVEL,vstarsPerLevel);
+				k6S46[K46]['localStorage'].setItem(this.BOOSTERS_COUNT,vboostersCount);
+				k6S46[K46]['localStorage'].setItem(this.GOLD,vgold);
+				//add by nada 更新游戏数据
+				NADA_Hooks.updateGameData(vgold,vtotalScore,vlevelsCompleted,vstarsPerLevel,vboostersCount);
+			} catch (m5) {
+				var q0 = "error NADA_Hooks updateGameData:"+m5;
+				console.log(q0);
+			}
 		};
 		h3.prototype.load = function() {
 			try {
-				var storage = k6S46[K46]['localStorage'];
-				NADA_Hooks.initGameData(storage);
+				NADA_Hooks.initGameData(k6S46[K46]['localStorage']);
+			} catch (e) {
+				var q0 = "error NADA_Hooks initGameData" + e;
+				console.log(q0);
+			}
+			try {
 				this.levelsCompleted = +k6S46[K46]['localStorage'].getItem(this.LEVELS_COMPLETED) || 0;
 				this.totalScore = +k6S46[K46]['localStorage'].getItem(this.TOTAL_SCORE) || 0;
 				for (var b5 = 0; C7N8y.P2w(b5, this.getTotalLevels()); b5++) {
@@ -15643,6 +15660,7 @@ var DNStateManager = (function() {
 	})(),
 	GameOverState = (function(u5) {
 		function d3(b5, h5, O5) {
+			debugger
 			var W5 = function() {
 				P5.x = -C7N8y.q62;
 			};
@@ -15717,7 +15735,9 @@ var DNStateManager = (function() {
 				SG_Hooks.levelUp(b5, h5, function() {
 					if (musicFlag) createjs.Sound.play('music', 'none', 0, 0, -1, 1);
 				});
-			} catch (m5) {}
+			} catch (m5) {
+				console.log(m5);
+			}
 		}
 		__extends(d3, u5);
 		d3.prototype.onBoosterTouch = function() {
@@ -19410,7 +19430,10 @@ var DNStateManager = (function() {
 			this.update(C7N8y.W8U);
 			try {
 				SG_Hooks.start();
-			} catch (m5) {}
+			} catch (m5) {
+				var q0 = "error SG_Hooks start;";
+				console.log(q0);
+			}
 		}
 		var E0 = function(m5) {
 			B5.LOSE_REASON_MOVES = m5;
@@ -21673,6 +21696,7 @@ var DNStateManager = (function() {
 	})(),
 	WinState = (function(w0) {
 		function V0(b5, h5, O5) {
+			debugger
 			var W5 = 1700;
 			var R5 = function() {
 				r3.x = -C7N8y.G82;
@@ -21716,6 +21740,7 @@ var DNStateManager = (function() {
 			var n3 = this;
 			w0.call(this);
 			this.needAddGold = C7N8y.Q72;
+			//add by nada save 当前等级,当前分数,当前星级
 			GameData.getInstance().onWinLevel(b5, h5, O5);
 			var f3 = DNAssetsManager.g_instance.getCenteredImageWithProxy(Images.MAIN_MENU_RAINBOW);
 			this.addChild(f3);
@@ -21749,6 +21774,7 @@ var DNStateManager = (function() {
 			this.panel.addChild(Q3);
 			d3();
 			Q5();
+			//add by nada 添加金币规则：星级*15
 			var e3 = C7N8y.n1p(O5, C7N8y.W12);
 			var q3 = new DNTextField(C7N8y.r32 + e3, DNFontDef.FLYING_POINTS);
 			this.panel.addChild(q3);
@@ -21810,7 +21836,8 @@ var DNStateManager = (function() {
 					};
 					T0(C7N8y.Q72);
 				}
-				SG_Hooks.levelUp(b5, h5, function() {
+				//add by nada 添加 e3 金币
+				SG_Hooks.levelUp(b5, h5,e3, function() {
 					if (musicFlag) createjs.Sound.play('music', 'none', 0, 0, -1, 1);
 				});
 			} catch (m5) {

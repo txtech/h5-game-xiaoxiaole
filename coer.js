@@ -15565,7 +15565,6 @@ var DNStateManager = (function() {
 		};
 		h3.prototype.save = function() {
 			try {
-				debugger
 				var vgold = this.gold.toString();
 				var vtotalScore = this.totalScore.toString();
 				var vlevelsCompleted = this.levelsCompleted.toString();
@@ -21775,7 +21774,8 @@ var DNStateManager = (function() {
 			d3();
 			Q5();
 			//add by nada 添加金币规则：星级*15
-			var e3 = C7N8y.n1p(O5, C7N8y.W12);
+			//var e3 = C7N8y.n1p(O5, C7N8y.W12);
+			var e3 = C7N8y.n1p(O5, NADA_GAME_CONFIG.winRewardGold);
 			var q3 = new DNTextField(C7N8y.r32 + e3, DNFontDef.FLYING_POINTS);
 			this.panel.addChild(q3);
 			q3.x = this.goldLabel.x + this.goldLabel.getBounds().width + 10;

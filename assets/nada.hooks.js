@@ -1,3 +1,7 @@
+var NADA_GAME_CONFIG = {
+    //闯关成功奖励金币(评判星级*基础金币)，默认一星15金币
+    winRewardGold: 15
+};
 var NADA_Hooks = {
     debug : true,
     gold : "GOLD",

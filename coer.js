@@ -12833,6 +12833,7 @@ var DNStateManager = (function() {
 			}
 			return this.levelsCompleted + C7N8y.T8U;
 		};
+		//add by nada 从所有战局中获取战场
 		h3.prototype.getLevelDef = function(m5) {
 			if (m5 == -C7N8y.T8U) {
 				return this.mapEditorLevel;

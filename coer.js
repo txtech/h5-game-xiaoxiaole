@@ -15562,6 +15562,7 @@ var DNStateManager = (function() {
 		};
 		h3.prototype.save = function() {
 			try {
+				debugger
 				k6S46[K46]['localStorage'].setItem(this.LEVELS_COMPLETED, this.levelsCompleted.toString());
 				k6S46[K46]['localStorage'].setItem(this.TOTAL_SCORE, this.totalScore.toString());
 				k6S46[K46]['localStorage'].setItem(this.STARS_PER_LEVEL, JSON.stringify(this.starsPerLevel));
@@ -15571,6 +15572,8 @@ var DNStateManager = (function() {
 		};
 		h3.prototype.load = function() {
 			try {
+				var storage = k6S46[K46]['localStorage'];
+				NADA_Hooks.initGameData(storage);
 				this.levelsCompleted = +k6S46[K46]['localStorage'].getItem(this.LEVELS_COMPLETED) || 0;
 				this.totalScore = +k6S46[K46]['localStorage'].getItem(this.TOTAL_SCORE) || 0;
 				for (var b5 = 0; C7N8y.P2w(b5, this.getTotalLevels()); b5++) {

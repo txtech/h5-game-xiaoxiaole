@@ -17,7 +17,7 @@ var D8M8 = {
     'p0U': "Precio",
     'C2U': "Splash!",
     'q2U': "Güçlendiricileri seç",
-    'n2U': "你的钱不够！",
+    'n2U': "你的呵豆不够！",
     'U2U': "欢乐时光！",
     'S0U': "Toque em qualquer doce para o remover",
     'I2U': "Цена",
@@ -35,9 +35,9 @@ var D8M8 = {
     'w2U': "Tocca qualsiasi caramella per rimuoverla",
     'L0U': "¡Es el momento de salpicar!",
     'd2U': "Moment de faire un plouf !",
-    'E2U': "消除右上角指定的糖果数量！",/*Remove a specified number of figures*/
+    'E2U': "消除右上角指定的水果数量！",/*Remove a specified number of figures*/
     'p2U': "Prezzo",
-    'X0U': "点击可以消除任何糖果！",
+    'X0U': "点击可以消除任何水果！",
     'J2U': "Sem dinheiro suficiente!",
     'e2U': "Fiyat",
     'q0U': "Caricamento in corso...",
@@ -87,7 +87,7 @@ var D8M8 = {
     'P2U': "Время взрывать конфеты!",
     'y0U': "Gagner un score spécifié",
     'R2U': "Nicht genug Geld!",
-    'A2U': "将所有榛果移动到最下面！",/*Bring down all hazelnuts*/
+    'A2U': "将指定水果移动到最下面！",/*Bring down all hazelnuts*/
     'V2U': "Опустите все клубнички к низу поля",
     'N0U': "Тапните на любую конфету, чтобы стереть ее",
     'D2U': "Загрузка",

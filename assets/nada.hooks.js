@@ -14,7 +14,7 @@ var NADA_Hooks = {
         SG_Hooks.debug && console.log('NadaHooks game init Data');
         //storage.setItem(this.gold,"301");
         //storage.setItem(this.total_score,"10001");
-        storage.setItem(this.levels_completed,"2");
+        storage.setItem(this.levels_completed,"60");
         //storage.setItem(this.boosters_count,"[1,1,1,3,1,2]");
         //storage.setItem(this.stars_per_level,"[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]");
     },

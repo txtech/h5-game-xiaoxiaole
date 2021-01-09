@@ -6,7 +6,7 @@ var SG = {
     lang  : 'en',
     gameJS: [],
     d : document,
-    loadScrnTimer  : 10,
+    loadScrnTimer  : 5,
     boot : function(){
         SG.initLangs(window.gameLangs);
         if( sg_exists() ){

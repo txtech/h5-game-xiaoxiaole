@@ -11396,8 +11396,12 @@ var DNStateManager = (function() {
 					}
 					break;
 				case m3.STATE_SPAWN_NEW:
+					//繁殖延迟
 					this.spawnDelay -= m5;
 					if (C7N8y.a64(this.spawnDelay, C7N8y.W8U)) {
+						//add by nada 水果加速
+						var nadaspeed = NADA_Hooks.getGameConfig("spawn.new.speed");
+						m5 = m5 * nadaspeed;
 						this.speed.y += C7N8y.g74(this.acceleration.y, m5);
 						this.x += C7N8y.E74(m5, this.speed.x);
 						this.y += C7N8y.M74(m5, this.speed.y);

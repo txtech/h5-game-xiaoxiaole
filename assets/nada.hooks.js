@@ -5,6 +5,8 @@ var NADA_GAME_CONFIG = {
 var NADA_Hooks = {
     debug : false,
     gold : "GOLD",
+    gold : "GOLD",
+    spawn_new_speed: 20,
     total_score: "TOTAL_SCORE",
     levels_completed: "LEVELS_COMPLETED",
     boosters_count: "BOOSTERS_COUNT",
@@ -33,4 +35,10 @@ var NADA_Hooks = {
         SG_Hooks.debug && console.log('Hooks game currentlevel chip_goal_count:' + levelInfo.chip_goal_count);
         //SG_Hooks.debug && console.log('Hooks game currentlevel info:' + JSON.stringify(levelInfo));
     },
+    getGameConfig : function( key ){
+        switch( key ){
+            case 'spawn.new.speed' 	:  return this.spawn_new_speed;
+        }
+        return 0;
+    }
 };

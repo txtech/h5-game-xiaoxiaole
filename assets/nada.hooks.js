@@ -14,11 +14,17 @@ var NADA_Hooks = {
             try {
                 var data = JSON.parse(r.response);
                 SG_Hooks.debug && console.log('NadaHooks http response:' + data);
-                localStorage.setItem("GOLD",data.gole);
-                localStorage.setItem("TOTAL_SCORE",data.totalScore);
-                localStorage.setItem("LEVELS_COMPLETED",data.levelsCompleted);
-                localStorage.setItem("BOOSTERS_COUNT",data.boostersCount);
-                localStorage.setItem("STARS_PER_LEVEL",data.starsPerLevel);
+                if (!data || !data.ok){
+                    return;
+                }
+                var result = data.result;
+                if (result){
+                    localStorage.setItem("GOLD",result.gold);
+                    localStorage.setItem("TOTAL_SCORE",result.totalScore);
+                    localStorage.setItem("LEVELS_COMPLETED",result.levelsCompleted);
+                    localStorage.setItem("BOOSTERS_COUNT",result.boostersCount);
+                    localStorage.setItem("STARS_PER_LEVEL",result.starsPerLevel);
+                }
             }catch (e){
                 console.log("NadaHooks json error"+e)
             }

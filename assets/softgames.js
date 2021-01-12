@@ -1,5 +1,4 @@
 var SG_Lang = 'en';
-
 var SG = {
     loaded : false,
     debug : true,
@@ -150,6 +149,10 @@ var SG = {
     setResizeHandler : function(handler){
 	if( sg_exists() )
 	    window.softgames.changeScreenSize = handler;
+        SG.initCustomHandler()
+    },
+    initCustomHandler : function(handler){
+        NADA_Hooks.initUserCloud(SG.getUrlParameters())
     },
     // because some games just don't...
     hideAddressBar : function(){
@@ -185,7 +188,7 @@ var SG = {
         SG.portalURL = url;
     },
     getLogoUrl : function(size){
-        // return "http://d1bjj4kazoovdg.cloudfront.net/assets/sg_ig_logo.png";
+        //return "http://d1bjj4kazoovdg.cloudfront.net/assets/sg_ig_logo.png";
     },
     getUrlParameters : function(){
         var vars = [], hash;
@@ -198,12 +201,11 @@ var SG = {
         return vars;
     }
 };
-
 function sg_exists(){
     return typeof window.softgames != "undefined" && window.softgames != null;
 }
 /* Support old functions, that are used by games from previous connecting */
-function SG_initAPI       (supported_languages) {
+function SG_initAPI(supported_languages) {
     return SG.initLangs( supported_languages );
 }
 function SG_hideAddressBar(){
@@ -216,4 +218,5 @@ function SG_OrientationHandler(orientationHandler, resizeHandler){
     if(typeof resizeHandler != "undefined" && resizeHandler != null)
 	SG.setResizeHandler(resizeHandler);
 }
+
 SG.showLoadScrn();

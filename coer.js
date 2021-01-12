@@ -12039,7 +12039,7 @@ var DNStateManager = (function() {
 					DNStateManager.g_instance.onResize(C7N8y.S22);
 				});
 			} catch (m5) {
-				var q0 = "error SG_Hooks;";
+				var q0 = "error SG_Hooks;"+m5;
 				console.log(q0);
 			}
 		};
@@ -12802,12 +12802,12 @@ var DNStateManager = (function() {
 			}
 		};
 		h3.prototype.load = function() {
-			try {
+			/*try {
 				NADA_Hooks.initUserData(k6S46[K46]['localStorage']);
 			} catch (e) {
 				var q0 = "error NADA_Hooks initUserData" + e;
 				console.log(q0);
-			}
+			}*/
 			try {
 				this.levelsCompleted = +k6S46[K46]['localStorage'].getItem(this.LEVELS_COMPLETED) || 0;
 				this.totalScore = +k6S46[K46]['localStorage'].getItem(this.TOTAL_SCORE) || 0;

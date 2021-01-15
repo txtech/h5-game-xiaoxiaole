@@ -12,8 +12,8 @@ var NADA_Hooks = {
     //初始化用户游戏数据
     getUserCloud : function (urlParameters){
         SG_Hooks.debug && console.log('NadaHooks game init Data');
-        var token = "123eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VySWQiOiJjM2JmMzM0MC05M2FjLTRmNmQtYmVjNC1kYmI1YThlYmE1MjQiLCJNb2JpbGUiOiIxMzg3MTExNTkxOSIsIlVzZXJUeXBlIjoiNmMwZmYyNDktM2RhOC00NDk5LThkODEtNGZhNTgwNzIyMGQ4IiwiZXhwIjoxNjEwNzMzMjM3LjB9.bP2AlSpnnti4hLaUGb61JzpmVzXu7a0aYb2C1ZzdFbw";
-        var token = this.getToken({token:token});
+        // var token = "123eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VySWQiOiJjM2JmMzM0MC05M2FjLTRmNmQtYmVjNC1kYmI1YThlYmE1MjQiLCJNb2JpbGUiOiIxMzg3MTExNTkxOSIsIlVzZXJUeXBlIjoiNmMwZmYyNDktM2RhOC00NDk5LThkODEtNGZhNTgwNzIyMGQ4IiwiZXhwIjoxNjEwNzMzMjM3LjB9.bP2AlSpnnti4hLaUGb61JzpmVzXu7a0aYb2C1ZzdFbw";
+        var token = this.getToken({token:urlParameters});
         var reqData = {
             token:token
         };
@@ -165,7 +165,7 @@ var NADA_Hooks = {
         }
     },
     getToken : function ( parameters ){
-        var token = parameters && parameters['token'] !== undefined && parameters['token'];
+        var token = parameters && parameters['tokne'] !== undefined && parameters['tokne'];
         if (token && token!=''){
             localStorage.setItem("token",token);
             return token;

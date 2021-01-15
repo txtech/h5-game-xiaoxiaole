@@ -12009,6 +12009,8 @@ var DNStateManager = (function() {
 		};
 		return S5;
 	})(),
+
+	//add by nada 游戏配置
 	DNGameConfig = (function() {
 		function h5() {}
 		var O5 = function(m5) {
@@ -12070,6 +12072,7 @@ var DNStateManager = (function() {
 		O5(C7N8y.Q72);
 		return h5;
 	})(),
+
 	DNLanguageSelector = (function(R5) {
 		var G5 = "flags/";
 		var S5 = function(m5) {
@@ -12321,6 +12324,8 @@ var DNStateManager = (function() {
 		};
 		return W5;
 	})(DNGUIObject),
+
+	// add by nada 声音管理
 	DNSoundManager = (function() {
 		var O5 = "win";
 		var W5 = "exchange";
@@ -12674,6 +12679,8 @@ var DNStateManager = (function() {
 		};
 		return R5;
 	})(DNGameObject),
+
+	//游戏数据
 	GameData = (function() {
 		var R5 = "5";
 		var G5 = "LOLIPOP";
@@ -13972,6 +13979,8 @@ var DNStateManager = (function() {
 		};
 		return J5;
 	})(PopupState),
+
+	//add by nada 点击开始预习准备
 	PlayState = (function(c3) {
 		var l3 = "LOSE_TYPE_TIME";
 		var S3 = "LOSE_TYPE_MOVES";
@@ -14373,7 +14382,7 @@ var DNStateManager = (function() {
 			this.addGuiObject(this.booster2);
 			this.update(C7N8y.W8U);
 			try {
-				SG_Hooks.start('PlayState');
+				SG_Hooks.start('PlayState',B5.g_curLevel);
 			} catch (m5) {
 				var q0 = "error SG_Hooks start;";
 				console.log(q0);
@@ -16718,8 +16727,9 @@ var DNStateManager = (function() {
 			d3();
 			Q5();
 			//add by nada 添加金币规则：星级*15
+			var winRewardGold = NADA_Hooks.getGameConfig("win.reward.gold");
 			//var e3 = C7N8y.n1p(O5, C7N8y.W12);
-			var e3 = C7N8y.n1p(O5, NADA_GAME_CONFIG.winRewardGold);
+			var e3 = C7N8y.n1p(O5,winRewardGold);
 			var q3 = new DNTextField(C7N8y.r32 + e3, DNFontDef.FLYING_POINTS);
 			this.panel.addChild(q3);
 			q3.x = this.goldLabel.x + this.goldLabel.getBounds().width + 10;
@@ -16781,7 +16791,7 @@ var DNStateManager = (function() {
 					T0(C7N8y.Q72);
 				}
 				//add by nada 添加 e3 金币
-				SG_Hooks.levelUp(b5, h5,e3, function() {
+				SG_Hooks.levelUp(b5, h5,e3,O5, function() {
 					if (musicFlag) createjs.Sound.play('music', 'none', 0, 0, -1, 1);
 				});
 			} catch (m5) {

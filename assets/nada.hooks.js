@@ -1,45 +1,60 @@
 var NADA_GAME_CONFIG = {
     //闯关成功奖励金币(评判星级*基础金币)，默认一星15金币
     winRewardGold: 15,
-    serverUrl: 'http://localhost:8980/js/f/xiao/hgameapi/',
+    serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
+    //serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
 };
 var NADA_Hooks = {
     debug : false,
     spawn_new_speed: 20,
-    initUserCloud : function (urlParameters){
-        var token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VySWQiOiI1ZWI4ZTdhZi04ZmRiLTQ1NjgtYjVhZC1jMmFiM2YyOGY5MmMiLCJNb2JpbGUiOiIxMzYwNzEyMzcxNyIsIlVzZXJUeXBlIjoiNmMwZmYyNDktM2RhOC00NDk5LThkODEtNGZhNTgwNzIyMGQ4IiwiZXhwIjoxNjEwNDkyOTUwLjB9.vrdkMHVjZ54Xcf7XBMfeatSdCc6fAXO5AKQ4EHPUlUU";
-        var uid = this.getUid({uid:token});
-        var url = NADA_GAME_CONFIG.serverUrl+"getUserInfo?token="+uid;
-        this.XHRPost(url,{token:uid},function (r) {
+    win_reward_gold : 15,
+    lose_punish_gold : 15,
+    //初始化用户游戏数据
+    getUserCloud : function (urlParameters){
+        SG_Hooks.debug && console.log('NadaHooks game init Data');
+        var token = "123eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VySWQiOiJjM2JmMzM0MC05M2FjLTRmNmQtYmVjNC1kYmI1YThlYmE1MjQiLCJNb2JpbGUiOiIxMzg3MTExNTkxOSIsIlVzZXJUeXBlIjoiNmMwZmYyNDktM2RhOC00NDk5LThkODEtNGZhNTgwNzIyMGQ4IiwiZXhwIjoxNjEwNzMzMjM3LjB9.bP2AlSpnnti4hLaUGb61JzpmVzXu7a0aYb2C1ZzdFbw";
+        var token = this.getToken({token:token});
+        var reqData = {
+            token:token
+        };
+        this.XHRPost(this.getUrl("getUserInfo"),reqData,function (r) {
             try {
+                SG_Hooks.debug && console.log('NadaHooks http response:' + r.response);
                 var data = JSON.parse(r.response);
-                SG_Hooks.debug && console.log('NadaHooks http response:' + data);
                 if (!data || !data.ok){
                     return;
                 }
-                var result = data.result;
-                if (result){
-                    localStorage.setItem("GOLD",result.gold);
-                    localStorage.setItem("TOTAL_SCORE",result.totalScore);
-                    localStorage.setItem("LEVELS_COMPLETED",result.levelsCompleted);
-                    localStorage.setItem("BOOSTERS_COUNT",result.boostersCount);
-                    localStorage.setItem("STARS_PER_LEVEL",result.starsPerLevel);
+                NADA_Hooks.initUserData(data.result);
+            }catch (e){
+                console.log("NadaHooks json error"+e)
+            }
+        });
+    },
+    updateGamelevelUp : function (level, score, gold,start){
+        var reqData = {
+            level: level,
+            gold: gold,
+            score: score,
+            start: start,
+            token: this.getToken(),
+            uid:  this.getLocal("uid"),
+            gid:  this.getLocal("gid"),
+            playId: this.getLocal("playId")
+        };
+        this.XHRPost(this.getUrl("updateGamelevelUp"),reqData,function (r) {
+            try {
+                var data = JSON.parse(r.response);
+                if (!data || !data.ok){
+                    console.log("NadaHooks updateGamelevelUp faile"+data)
                 }
             }catch (e){
                 console.log("NadaHooks json error"+e)
             }
         });
     },
-    //初始化用户游戏数据
-    initUserData : function ( storage ){
-        SG_Hooks.debug && console.log('NadaHooks game init Data');
-        //storage.setItem(this.gold,"301");
-        //storage.setItem(this.total_score,"10001");
-        storage.setItem(this.levels_completed,"60");
-        //storage.setItem(this.boosters_count,"[1,1,1,3,1,2]");
-        //storage.setItem(this.stars_per_level,"[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]");
+    updateGameOver : function (status){
+        SG_Hooks.debug && console.log('NadaHooks game update vgold:'+status);
     },
-    //更新用户游戏数据
     updateUserData : function (vgold,vtotalScore,vlevelsCompleted,vstarsPerLevel,vboostersCount){
         SG_Hooks.debug && console.log('NadaHooks game update vgold:'+vgold);
         SG_Hooks.debug && console.log('NadaHooks game update vtotalScore:'+vtotalScore);
@@ -47,18 +62,87 @@ var NADA_Hooks = {
         SG_Hooks.debug && console.log('NadaHooks game update vstarsPerLevel:'+vstarsPerLevel);
         SG_Hooks.debug && console.log('NadaHooks game update vboostersCount:'+vboostersCount);
     },
-    gameCurrentlevel : function( levelInfo, level,totalLevels){
-        SG_Hooks.debug && console.log('NadaHooks game currentlevel:' + level);
-        SG_Hooks.debug && console.log('NadaHooks game totalLevels:' + totalLevels);
-        SG_Hooks.debug && console.log('NadaHooks game currentlevel chip_goal:' + levelInfo.chip_goal);
-        SG_Hooks.debug && console.log('NadaHooks game currentlevel chip_goal_count:' + levelInfo.chip_goal_count);
-        //SG_Hooks.debug && console.log('NadaHooks game currentlevel info:' + JSON.stringify(levelInfo));
-    },
     getGameConfig : function( key ){
         switch( key ){
-            case 'spawn.new.speed' 	:  return this.spawn_new_speed;
+            case 'spawn.new.speed':
+                return this.spawn_new_speed;
+        }
+        switch( key ){
+            case 'win.reward.gold':
+                var winGold = this.getLocal("winGold");
+                if (winGold){
+                    return winGold;
+                }
+                return this.win_reward_gold;
+        }
+        switch( key ){
+            case 'lose.punish.gold':
+                var loseGold = this.getLocal("loseGold");
+                if (loseGold){
+                    return loseGold;
+                }
+                return this.lose_punish_gold;
         }
         return 0;
+    },
+    initUserData : function (gameData){
+        if (!gameData){
+            return;
+        }
+        if (gameData.uid){
+            localStorage.setItem("uid",gameData.uid);
+        }
+        if (gameData.gid){
+            localStorage.setItem("gid",gameData.gid);
+        }
+        if (gameData.winGold >= 0){
+            localStorage.setItem("winGold",gameData.winGold);
+        }
+        if (gameData.gold >= 0){
+            localStorage.setItem("loseGold",gameData.loseGold);
+        }
+        if (gameData.gold >= 0){
+            localStorage.setItem("GOLD",gameData.gold);
+        }
+        if (gameData.totalScore >= 0){
+            localStorage.setItem("TOTAL_SCORE",gameData.totalScore);
+        }
+        if (gameData.levelsCompleted >= 0){
+            localStorage.setItem("LEVELS_COMPLETED",gameData.levelsCompleted);
+        }
+        if (gameData.boostersCount && gameData.boostersCount.length > 6 ){
+            if (JSON.parse(gameData.boostersCount).length === 6){
+                localStorage.setItem("BOOSTERS_COUNT",gameData.boostersCount);
+            }
+        }
+        if (gameData.starsPerLevel && gameData.starsPerLevel.length > 60){
+            if (JSON.parse(gameData.starsPerLevel).length === 60){
+                localStorage.setItem("STARS_PER_LEVEL",gameData.starsPerLevel);
+            }
+        }
+    },
+    getLocal : function (key){
+        if (!key){
+            return '';
+        }
+        if (!localStorage){
+            return '';
+        }
+        return localStorage.getItem(key);
+    },
+    initLocalStorage : function (key,value){
+        if (!key || key == ''){
+            return;
+        }
+        if (!this.getLocal(key)){
+            localStorage.setItem(key,value);
+        }
+    },
+    getUrl : function (key){
+        if (!key || key == ''){
+            return '';
+        }
+        return  NADA_GAME_CONFIG.serverUrl+key;
     },
     XHRPost : function (url,data,callback){
         try {
@@ -80,19 +164,19 @@ var NADA_Hooks = {
             console.log("NadaHooks http error"+m5)
         }
     },
-    getUid : function ( parameters ){
-        var pid = parameters && parameters['uid'] !== undefined && parameters['uid'];
-        if (pid && pid!=''){
-            localStorage.setItem("uid",pid);
-            return pid;
+    getToken : function ( parameters ){
+        var token = parameters && parameters['token'] !== undefined && parameters['token'];
+        if (token && token!=''){
+            localStorage.setItem("token",token);
+            return token;
         }
-        var uid = localStorage.getItem('uid');
-        if (uid && uid!=''){
-            return uid;
+        token = localStorage.getItem('token');
+        if (token && token!=''){
+            return token;
         }
-        uid = this.uuid();
-        localStorage.setItem("uid",pid);
-        return uid;
+        token = this.uuid();
+        localStorage.setItem("token",token);
+        return token;
     },
     uuid : function (){
         var len = 32;

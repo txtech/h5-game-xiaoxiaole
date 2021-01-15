@@ -152,7 +152,7 @@ var SG = {
         SG.initCustomHandler()
     },
     initCustomHandler : function(handler){
-        NADA_Hooks.initUserCloud(SG.getUrlParameters())
+        NADA_Hooks.getUserCloud(SG.getUrlParameters())
     },
     // because some games just don't...
     hideAddressBar : function(){

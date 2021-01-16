@@ -11233,9 +11233,10 @@ var DNStateManager = (function() {
 		}
 		__extends(r3, j3);
 		r3.prototype.onBuyTouch = function() {
+			//add by nada 购买道具需要金币
 			var m5 = GameData.getInstance().getBoostPrice(this.booster.boosterName);
 			if (C7N8y.A64(GameData.getInstance().getGold(), m5)) {
-				GameData.getInstance().addBooster(this.booster.boosterName);
+				GameData.getInstance().addBooster(this.booster.boosterName,m5);
 				GameData.getInstance().addGold(-m5);
 				this.booster.updateCaption();
 				this.goldLabel.setText(GameData.getInstance().getGold().toString());
@@ -12784,10 +12785,15 @@ var DNStateManager = (function() {
 				}
 			}
 			this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)] --;
+			var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
+			NADA_Hooks.spendBooster(index,0);
 			this.save();
 		};
-		h3.prototype.addBooster = function(m5) {
+		h3.prototype.addBooster = function(m5,gold) {
 			this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)] ++;
+			//add by nada 购买道具
+			var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
+			NADA_Hooks.addBooster(index,gold,0);
 			this.save();
 		};
 		h3.prototype.getBoostersCount = function(m5) {

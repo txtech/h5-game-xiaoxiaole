@@ -1,6 +1,6 @@
 var NADA_Hooks = {
-    serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
-    //serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
+    //serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
+    serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
     debug : false,
     spawn_new_speed: 20,
     win_reward_gold : 15,
@@ -42,6 +42,47 @@ var NADA_Hooks = {
                 var data = JSON.parse(r.response);
                 if (!data || !data.ok){
                     console.log("NadaHooks updateGamelevelUp faile"+data)
+                }
+            }catch (e){
+                console.log("NadaHooks json error"+e)
+            }
+        });
+    },
+    addBooster : function (boosterId,needGold,level){
+        var reqData = {
+            level: level,
+            boosterId: boosterId,
+            needGold: needGold,
+            token: this.getToken(),
+            uid:  this.getLocal("uid"),
+            gid:  this.getLocal("gid"),
+            playId: this.getPlayId()
+        };
+        this.XHRPost(this.getUrl("addBooster"),reqData,function (r) {
+            try {
+                var data = JSON.parse(r.response);
+                if (!data || !data.ok){
+                    console.log("NadaHooks updateBooster faile"+data)
+                }
+            }catch (e){
+                console.log("NadaHooks json error"+e)
+            }
+        });
+    },
+    spendBooster : function (boosterId,needGold,level){
+        var reqData = {
+            level: level,
+            boosterId: boosterId,
+            token: this.getToken(),
+            uid:  this.getLocal("uid"),
+            gid:  this.getLocal("gid"),
+            playId: this.getPlayId()
+        };
+        this.XHRPost(this.getUrl("spendBooster"),reqData,function (r) {
+            try {
+                var data = JSON.parse(r.response);
+                if (!data || !data.ok){
+                    console.log("NadaHooks updateBooster faile"+data)
                 }
             }catch (e){
                 console.log("NadaHooks json error"+e)

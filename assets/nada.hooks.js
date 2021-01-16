@@ -6,11 +6,11 @@ var NADA_Hooks = {
     win_reward_gold : 15,
     lose_punish_gold : 15,
     //初始化用户游戏数据
-    getUserCloud : function (urlParameters){
+    getUserCloud : function (url){
         SG_Hooks.debug && console.log('NadaHooks game init Data');
-        var token = this.getToken({token:urlParameters});
+        var uid = this.getUid(url);
         var reqData = {
-            token:token
+            uid:uid
         };
         this.XHRPost(this.getUrl("getUserInfo"),reqData,function (r) {
             try {
@@ -32,7 +32,6 @@ var NADA_Hooks = {
             gold: gold,
             score: score,
             start: start,
-            token: this.getToken(),
             uid:  this.getLocal("uid"),
             gid:  this.getLocal("gid"),
             playId: this.getPlayId()
@@ -53,7 +52,6 @@ var NADA_Hooks = {
             level: level,
             boosterId: boosterId,
             needGold: needGold,
-            token: this.getToken(),
             uid:  this.getLocal("uid"),
             gid:  this.getLocal("gid"),
             playId: this.getPlayId()
@@ -73,7 +71,6 @@ var NADA_Hooks = {
         var reqData = {
             level: level,
             boosterId: boosterId,
-            token: this.getToken(),
             uid:  this.getLocal("uid"),
             gid:  this.getLocal("gid"),
             playId: this.getPlayId()
@@ -204,19 +201,19 @@ var NADA_Hooks = {
             console.log("NadaHooks http error"+m5)
         }
     },
-    getToken : function ( parameters ){
-        var token = parameters && parameters['tokne'] !== undefined && parameters['tokne'];
-        if (token && token!=''){
-            localStorage.setItem("token",token);
-            return token;
+    getUid : function ( parameters ){
+        var uid = parameters && parameters['uid'] !== undefined && parameters['uid'];
+        if (uid && uid!=''){
+            localStorage.setItem("uid",uid);
+            return uid;
         }
-        token = localStorage.getItem('token');
-        if (token && token!=''){
-            return token;
+        uid = localStorage.getItem('uid');
+        if (uid && uid!=''){
+            return uid;
         }
-        token = this.uuid();
-        localStorage.setItem("token",token);
-        return token;
+        uid = this.uuid();
+        localStorage.setItem("uid",uid);
+        return uid;
     },
     getPlayId : function (){
         var playId = localStorage.getItem('playId');
@@ -225,7 +222,7 @@ var NADA_Hooks = {
         }
         playId = this.uuid();
         localStorage.setItem("playId",playId);
-        return token;
+        return playId;
     },
     uuid : function (){
         var len = 32;

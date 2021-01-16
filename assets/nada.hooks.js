@@ -1,10 +1,6 @@
-var NADA_GAME_CONFIG = {
-    //闯关成功奖励金币(评判星级*基础金币)，默认一星15金币
-    winRewardGold: 15,
+var NADA_Hooks = {
     serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
     //serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
-};
-var NADA_Hooks = {
     debug : false,
     spawn_new_speed: 20,
     win_reward_gold : 15,
@@ -12,7 +8,6 @@ var NADA_Hooks = {
     //初始化用户游戏数据
     getUserCloud : function (urlParameters){
         SG_Hooks.debug && console.log('NadaHooks game init Data');
-        // var token = "123eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VySWQiOiJjM2JmMzM0MC05M2FjLTRmNmQtYmVjNC1kYmI1YThlYmE1MjQiLCJNb2JpbGUiOiIxMzg3MTExNTkxOSIsIlVzZXJUeXBlIjoiNmMwZmYyNDktM2RhOC00NDk5LThkODEtNGZhNTgwNzIyMGQ4IiwiZXhwIjoxNjEwNzMzMjM3LjB9.bP2AlSpnnti4hLaUGb61JzpmVzXu7a0aYb2C1ZzdFbw";
         var token = this.getToken({token:urlParameters});
         var reqData = {
             token:token
@@ -22,6 +17,7 @@ var NADA_Hooks = {
                 SG_Hooks.debug && console.log('NadaHooks http response:' + r.response);
                 var data = JSON.parse(r.response);
                 if (!data || !data.ok){
+                    SG_Hooks.getPlayId();
                     return;
                 }
                 NADA_Hooks.initUserData(data.result);
@@ -39,7 +35,7 @@ var NADA_Hooks = {
             token: this.getToken(),
             uid:  this.getLocal("uid"),
             gid:  this.getLocal("gid"),
-            playId: this.getLocal("playId")
+            playId: this.getPlayId()
         };
         this.XHRPost(this.getUrl("updateGamelevelUp"),reqData,function (r) {
             try {
@@ -88,6 +84,9 @@ var NADA_Hooks = {
     initUserData : function (gameData){
         if (!gameData){
             return;
+        }
+        if (gameData.name){
+            localStorage.setItem("name",gameData.name);
         }
         if (gameData.uid){
             localStorage.setItem("uid",gameData.uid);
@@ -142,7 +141,7 @@ var NADA_Hooks = {
         if (!key || key == ''){
             return '';
         }
-        return  NADA_GAME_CONFIG.serverUrl+key;
+        return  NADA_Hooks.serverUrl+key;
     },
     XHRPost : function (url,data,callback){
         try {
@@ -176,6 +175,15 @@ var NADA_Hooks = {
         }
         token = this.uuid();
         localStorage.setItem("token",token);
+        return token;
+    },
+    getPlayId : function (){
+        var playId = localStorage.getItem('playId');
+        if (playId && playId!=''){
+            return playId;
+        }
+        playId = this.uuid();
+        localStorage.setItem("playId",playId);
         return token;
     },
     uuid : function (){

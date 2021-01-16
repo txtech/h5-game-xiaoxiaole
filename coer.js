@@ -16795,7 +16795,7 @@ var DNStateManager = (function() {
 					if (musicFlag) createjs.Sound.play('music', 'none', 0, 0, -1, 1);
 				});
 			} catch (m5) {
-				var q0 = "error SG_Hooks.levelUp(level, score);";
+				var q0 = "error SG_Hooks.levelUp(level, score);"+m5;
 				console.log(q0);
 			}
 		}

@@ -9463,7 +9463,7 @@ var DNStateManager = (function() {
 			if (m5) {
 				//add by nada (默认：700*900)
 				if (C7N8y.b24(Constants.ASSETS_HEIGHT, Constants.SCREEN_HEIGHT) && !this.haveFill) {
-					debugger
+					// debugger
 					this.haveFill = C7N8y.s22;
 					var b5 = DNAssetsManager.g_instance.getImage(Images.FILL_BOTTOM);
 					this.addChild(b5);
@@ -9610,9 +9610,11 @@ var DNStateManager = (function() {
 			this.findGUIObject(Layouts.NAME_BUTTON_PLAY).setHandler(function() {
 				return DNStateManager.g_instance.pushState(new CoolTransitionInState(new SelectLevelState()));
 			});
+			// add by nada
 			this.findGUIObject(Layouts.NAME_BUTTON_MORE_GAMES).setHandler(function() {
 				return O5.onMoreGamesTouch();
 			});
+			this.moreGamesButtonPlace = this.findGUIObject(Layouts.NAME_BUTTON_PLAY);
 			this.title = this.findGUIObject(C7N8y.N12);
 			this.soundButtonPlace = this.findGUIObject(Layouts.NAME_SOUND_PLACE);
 			this.setSoundButton();
@@ -9678,7 +9680,18 @@ var DNStateManager = (function() {
 			this.soundButtonPlace.addChild(h5);
 			this.addGuiObject(h5);
 		};
+		//add by nada 更多游戏点击
+		R5.prototype.setMoreGameButton = function() {
+			var m5 = this;
+			var d3 = new createjs.Text(DNStringManager.getInstance().getString(DNStringManager.SELECT_BOOSTER), C7N8y.g72, C7N8y.y5m);
+			m5.moreGamesButtonPlace.addChild(d3);
+			setTimeout(function(d3){
+				m5.moreGamesButtonPlace.removeAllChildren();
+			}, 1000);
+		};
+		//add by nada 更多游戏按钮
 		R5.prototype.onMoreGamesTouch = function() {
+			// this.setMoreGameButton();
 			SG.redirectToPortal();
 		};
 		return R5;

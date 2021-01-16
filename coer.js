@@ -9463,6 +9463,7 @@ var DNStateManager = (function() {
 			if (m5) {
 				//add by nada (默认：700*900)
 				if (C7N8y.b24(Constants.ASSETS_HEIGHT, Constants.SCREEN_HEIGHT) && !this.haveFill) {
+					debugger
 					this.haveFill = C7N8y.s22;
 					var b5 = DNAssetsManager.g_instance.getImage(Images.FILL_BOTTOM);
 					this.addChild(b5);
@@ -9471,7 +9472,9 @@ var DNStateManager = (function() {
 					var O5 = C7N8y.N7U;
 					//可用高度：328 = (屏幕高度1555 - 默认高度900)655/2
 					var W5 = C7N8y.v24((Constants.SCREEN_HEIGHT - Constants.ASSETS_HEIGHT), C7N8y.A8U);
-					var scale = C7N8y.K2w((C7N8y.y24(W5, O5)),0.99);
+
+					/// var scale = C7N8y.K2w((C7N8y.y24(W5, O5)),0.99);
+					var scale = (C7N8y.y24(W5, O5));
 					b5.y = C7N8y.k24(Constants.ASSETS_HEIGHT, C7N8y.T8U);
 					h5.y = C7N8y.K2w(-O5,scale) + C7N8y.T8U;
 					if (C7N8y.O24(W5, O5)) {

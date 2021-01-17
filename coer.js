@@ -873,9 +873,13 @@ var DNStateManager = (function() {
 					//可用高度(W5)：328 = (屏幕高度1555 - 默认高度900)/2
 					var scale = (C7N8y.y24(W5, O5));
 					b5.y = C7N8y.k24(Constants.ASSETS_HEIGHT, C7N8y.T8U);
-					//h5.y = -O5 + C7N8y.T8U;
-					h5.y = C7N8y.K2w((-O5+ C7N8y.T8U),scale); //缩放比例*scale
+					//h5.y = -O5 + C7N8y.T8U; // 修改BUG
+					h5.y = C7N8y.K2w((-O5+ C7N8y.T8U),scale); //title增加缩放比例*scale
 					if (C7N8y.O24(W5, O5)) {
+						b5.scaleY = (C7N8y.o24(W5, O5));
+						h5.scaleY = (C7N8y.y24(W5, O5));
+					}else{
+						h5.y = -W5;
 						b5.scaleY = (C7N8y.o24(W5, O5));
 						h5.scaleY = (C7N8y.y24(W5, O5));
 					}

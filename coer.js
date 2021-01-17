@@ -867,21 +867,19 @@ var DNStateManager = (function() {
 					this.addChild(b5);
 					var h5 = DNAssetsManager.g_instance.getImage(Images.FILL_TOP);
 					this.addChild(h5);
-					var O5 = C7N8y.N7U;
-					//可用高度：328 = (屏幕高度1555 - 默认高度900)655/2
+					var O5 = C7N8y.N7U;//title图片高度150
 					var W5 = C7N8y.v24((Constants.SCREEN_HEIGHT - Constants.ASSETS_HEIGHT), C7N8y.A8U);
-
-					/// var scale = C7N8y.K2w((C7N8y.y24(W5, O5)),0.99);
+					//add by nada
+					//可用高度(W5)：328 = (屏幕高度1555 - 默认高度900)/2
 					var scale = (C7N8y.y24(W5, O5));
 					b5.y = C7N8y.k24(Constants.ASSETS_HEIGHT, C7N8y.T8U);
-					h5.y = C7N8y.K2w(-O5,scale) + C7N8y.T8U;
+					//h5.y = -O5 + C7N8y.T8U;
+					h5.y = C7N8y.K2w(-O5,scale) + C7N8y.T8U; //缩放比例*scale
 					if (C7N8y.O24(W5, O5)) {
-						//缩放比例
-						b5.scaleY = scale;
-						h5.scaleY = scale;
+						b5.scaleY = (C7N8y.o24(W5, O5));
+						h5.scaleY = (C7N8y.y24(W5, O5));
 					}
 				}
-
 			}
 		};
 		P5.prototype.loadLayout = function(m5, b5) {

@@ -96,13 +96,6 @@ var NADA_Hooks = {
         SG_Hooks.debug && console.log('NadaHooks selectLevel :'+level);
         localStorage.setItem("curLevel",level);
     },
-    updateUserData : function (vgold,vtotalScore,vlevelsCompleted,vstarsPerLevel,vboostersCount){
-        SG_Hooks.debug && console.log('NadaHooks game update vgold:'+vgold);
-        SG_Hooks.debug && console.log('NadaHooks game update vtotalScore:'+vtotalScore);
-        SG_Hooks.debug && console.log('NadaHooks game update vlevelsCompleted:'+vlevelsCompleted);
-        SG_Hooks.debug && console.log('NadaHooks game update vstarsPerLevel:'+vstarsPerLevel);
-        SG_Hooks.debug && console.log('NadaHooks game update vboostersCount:'+vboostersCount);
-    },
     getGameConfig : function( key ){
         switch( key ){
             case 'spawn.new.speed':

@@ -4215,6 +4215,7 @@ var DNStateManager = (function() {
 			}
 			return this.instance;
 		};
+		//add by nada 本地保存游戏数据
 		h3.prototype.save = function() {
 			try {
 				var vgold = this.gold.toString();
@@ -4227,8 +4228,6 @@ var DNStateManager = (function() {
 				k6S46[K46]['localStorage'].setItem(this.STARS_PER_LEVEL,vstarsPerLevel);
 				k6S46[K46]['localStorage'].setItem(this.BOOSTERS_COUNT,vboostersCount);
 				k6S46[K46]['localStorage'].setItem(this.GOLD,vgold);
-				//add by nada 更新游戏数据
-				NADA_Hooks.updateUserData(vgold,vtotalScore,vlevelsCompleted,vstarsPerLevel,vboostersCount);
 			} catch (m5) {
 				var q0 = "error NADA_Hooks updateUserData:"+m5;
 				console.log(q0);
@@ -4378,6 +4377,7 @@ var DNStateManager = (function() {
 					};
 					Q5(C7N8y.Q72);
 				}
+				//add by nada 游戏结束升级
 				SG_Hooks.levelUp(b5, h5, function() {
 					if (musicFlag) createjs.Sound.play('music', 'none', 0, 0, -1, 1);
 				});
@@ -7421,7 +7421,7 @@ var DNStateManager = (function() {
 		}
 		__extends(u5, Q5);
 		u5.prototype.onTouch = function() {
-			//add by nada 选择等级按钮
+			//add by nada 选择等级按钮点击事件
 			SG_Hooks.selectLevel(this.levelNum);
 			var m5 = new SelectBoosterState(this.levelNum);
 			m5.shader.visible = C7N8y.Q72;

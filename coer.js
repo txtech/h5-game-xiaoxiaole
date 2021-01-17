@@ -9681,17 +9681,18 @@ var DNStateManager = (function() {
 			this.addGuiObject(h5);
 		};
 		//add by nada 更多游戏点击
-		R5.prototype.setMoreGameButton = function() {
-			var m5 = this;
-			var d3 = new createjs.Text(DNStringManager.getInstance().getString(DNStringManager.SELECT_BOOSTER), C7N8y.g72, C7N8y.y5m);
-			m5.moreGamesButtonPlace.addChild(d3);
-			setTimeout(function(d3){
-				m5.moreGamesButtonPlace.removeAllChildren();
-			}, 1000);
+		R5.prototype.setMoreGameButton = function(name) {
+		    if(name && name!=''){
+                var d3 = new createjs.Text(name, C7N8y.g72, C7N8y.y5m);
+                d3.textAlign = C7N8y.V02;
+                d3.lineWidth = C7N8y.z8U;
+                d3.y = -120;
+                this.moreGamesButtonPlace.addChild(d3);
+            }
 		};
 		//add by nada 更多游戏按钮
 		R5.prototype.onMoreGamesTouch = function() {
-			// this.setMoreGameButton();
+			this.setMoreGameButton(NADA_Hooks.getLocal("name"));
 			SG.redirectToPortal();
 		};
 		return R5;
@@ -15925,6 +15926,8 @@ var DNStateManager = (function() {
 			S5(C7N8y.z8U);
 			R5();
 			this.panel.addChild(d3);
+			//add by nada 选择道具按钮居中
+            d3.y = -150;
 			if (C7N8y.l3p(GameData.getInstance().getLevelDef(b5).moves, C7N8y.W8U)) {
 				var h3 = function() {
 					f3.y = -C7N8y.a92;

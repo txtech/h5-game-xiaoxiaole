@@ -173,7 +173,7 @@ var SG = {
         SG.detectPortalUrl();
         window.location.href=SG.portalURL;*/
         //Play68.goHome();
-        alert(NADA_Hooks.getLocal("name"));
+        //alert(NADA_Hooks.getLocal("name"));
     },
     detectPortalUrl:function(){
     	var url=softgames.back_url;

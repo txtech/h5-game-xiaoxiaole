@@ -874,7 +874,7 @@ var DNStateManager = (function() {
 					var scale = (C7N8y.y24(W5, O5));
 					b5.y = C7N8y.k24(Constants.ASSETS_HEIGHT, C7N8y.T8U);
 					//h5.y = -O5 + C7N8y.T8U;
-					h5.y = C7N8y.K2w(-O5,scale) + C7N8y.T8U; //缩放比例*scale
+					h5.y = C7N8y.K2w((-O5+ C7N8y.T8U),scale); //缩放比例*scale
 					if (C7N8y.O24(W5, O5)) {
 						b5.scaleY = (C7N8y.o24(W5, O5));
 						h5.scaleY = (C7N8y.y24(W5, O5));

@@ -4058,10 +4058,8 @@ Levels = (function() {
         ],
         //闯关类型
         "chip_types": C7N8y.S8U,
-        //步数移动
-       // "moves": C7N8y.c8U,
-        "moves": 1,
-        //时间
+        "moves": C7N8y.c8U,
+        //"moves": 3,
         "time": C7N8y.W8U,
         //闯关目标
         "chip_goal": C7N8y.A8U,

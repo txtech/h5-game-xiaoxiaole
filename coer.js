@@ -1,5 +1,5 @@
-// update by nada to variable.js
-// update by nada to create1.js
+// delete by nada to variable.js
+// delete by nada to create1.js
 //delete by nada(go to levels.js)
 
 function init() {
@@ -746,6 +746,7 @@ var DNStateManager = (function() {
 		O5.prototype = h5.prototype;
 		b5.prototype = new O5();
 	},
+	//DN游戏状态
 	DNGameState = (function(K5) {
 		function P5() {
 			K5.call(this);
@@ -986,6 +987,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(createjs.Container),
+	//主菜单状态
 	MainMenuState = (function(W5) {
 		function R5() {
 			var m5 = 4000;
@@ -1097,6 +1099,7 @@ var DNStateManager = (function() {
 		};
 		return R5;
 	})(DNGameState),
+	//弹出状态
 	PopupState = (function(b5) {
 		function h5() {
 			var m5 = 0.4;
@@ -1153,6 +1156,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(DNGameState),
+	//DN计时器
 	DNTimer = (function(W5) {
 		function R5(m5, b5, h5) {
 			var O5 = (1.58E2 <= (0x23B, 143.4E1) ? (65., 1000000) : (0x1A8, 9.5E2) <= 0x1E3 ? (0x9, 'L') : (0x11E, 13.) >= 8.46E2 ? 1.283E3 : (39., 27.1E1));
@@ -1203,6 +1207,7 @@ var DNStateManager = (function() {
 		O5(C7N8y.Q72);
 		return W5;
 	})(DNGameObject),
+	//DN扁平按钮
 	DNFlatButton = (function(R5) {
 		function G5(m5, b5) {
 			R5.call(this);
@@ -1335,6 +1340,7 @@ var DNStateManager = (function() {
 		};
 		return S5;
 	})(DNGUIObject),
+	//DN果冻按钮
 	DNJellyButton = (function(R5) {
 		function G5(m5, b5) {
 			R5.call(this);
@@ -2101,6 +2107,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(),
+	//布局货币
 	CurLayouts = (function() {
 		function m5() {}
 		var b5 = function() {
@@ -2484,6 +2491,7 @@ var DNStateManager = (function() {
 		b5();
 		return m5;
 	})(),
+	//启动道具按钮
 	ActivateBoosterButton = (function(O5) {
 		function W5(m5, b5) {
 			var h5 = this;
@@ -2511,6 +2519,7 @@ var DNStateManager = (function() {
 		};
 		return W5;
 	})(BoosterButtonBase),
+	//自动释放效应
 	AutoreleaseEffect = (function(h5) {
 		function O5() {
 			var m5 = "boom_";
@@ -2541,6 +2550,7 @@ var DNStateManager = (function() {
 		};
 		return O5;
 	})(DNGameObject),
+	//奖金飞溅器
 	BonusSplasher = (function(h5) {
 		function O5(m5) {
 			h5.call(this);
@@ -2560,6 +2570,7 @@ var DNStateManager = (function() {
 		};
 		return O5;
 	})(DNGameObject),
+	//多买些助推器
 	BuyMoreBoostersState = (function(j3) {
 		function r3(b5) {
 			var h5 = 140;
@@ -2794,7 +2805,7 @@ var DNStateManager = (function() {
 		m3.prototype.update = function(m5) {
 			this.stateTime += m5;
 			switch (this.state) {
-				case this.STATE_NORMAL:
+				case this.STATE_NORMAL://状态正常
 					if (this.stoneHeart || this.chocolate) {
 						this.scaleX = this.scaleY = C7N8y.T8U;
 						break;
@@ -2808,12 +2819,12 @@ var DNStateManager = (function() {
 					}
 					this.canBeMatched = C7N8y.s22;
 					break;
-				case this.STATE_EXCHANGE:
+				case this.STATE_EXCHANGE://交换状态
 					if (C7N8y.e64(this.stateTime, Constants.EXCHANGE_TIME)) {
 						this.setState(this.STATE_NORMAL);
 					}
 					break;
-				case m3.STATE_SPAWN_NEW:
+				case m3.STATE_SPAWN_NEW://产生新的
 					//繁殖延迟
 					this.spawnDelay -= m5;
 					if (C7N8y.a64(this.spawnDelay, C7N8y.W8U)) {
@@ -2833,7 +2844,7 @@ var DNStateManager = (function() {
 						}
 					}
 					break;
-				case this.STATE_SHIFT_DOWN:
+				case this.STATE_SHIFT_DOWN://状态下移
 					this.speed.y += C7N8y.F74(this.acceleration.y, m5);
 					this.x += C7N8y.T74(m5, this.speed.x);
 					this.y += C7N8y.d74(m5, this.speed.y);
@@ -2843,7 +2854,7 @@ var DNStateManager = (function() {
 						PlayState.g_instance.onShiftEnded(this);
 					}
 					break;
-				case m3.STATE_FALL_DOWN:
+				case m3.STATE_FALL_DOWN://落下完成
 					this.speed.y += C7N8y.w74(this.acceleration.y, m5);
 					this.x += C7N8y.z74(m5, this.speed.x);
 					this.y += C7N8y.q74(m5, this.speed.y);
@@ -2852,9 +2863,10 @@ var DNStateManager = (function() {
 						this.kill();
 					}
 					break;
-				case this.STATE_MATCH:
+				case this.STATE_MATCH: // 状态匹配
 					this.scaleY = C7N8y.H74(C7N8y.T8U, this.stateTime * C7N8y.D72);
 					this.scaleX = C7N8y.T8U + C7N8y.X74(this.stateTime, C7N8y.D72);
+					//1-（开始时间-匹配时间）
 					this.alpha = C7N8y.C74(C7N8y.T8U, this.stateTime / Constants.MATCH_TIME);
 					if (C7N8y.I74(this.stateTime, Constants.MATCH_TIME / C7N8y.A8U) && !this.wasClear) {
 						PlayState.g_instance.addPointsAt(this, this.matchReason);
@@ -3228,6 +3240,7 @@ var DNStateManager = (function() {
 		};
 		return O5;
 	})(DNGameObject),
+	//转换为奖励效果
 	ConvertToBonusEffect = (function(b5) {
 		function h5(m5) {
 			b5.call(this);
@@ -3254,6 +3267,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(DNGameObject),
+	//冷态转变
 	CoolTransitionInState = (function(h5) {
 		function O5(m5) {
 			var b5 = this;
@@ -3282,6 +3296,7 @@ var DNStateManager = (function() {
 		O5.prototype.alignByCenter = function() {};
 		return O5;
 	})(DNGameState),
+	//冷却过渡状态
 	CoolTransitionOutState = (function(b5) {
 		function h5() {
 			var m5 = 320;
@@ -3303,6 +3318,7 @@ var DNStateManager = (function() {
 		h5.prototype.alignByCenter = function() {};
 		return h5;
 	})(DNGameState),
+	//计数器圆
 	CounterCircle = (function(h5) {
 		function O5(m5) {
 			h5.call(this);
@@ -3327,6 +3343,7 @@ var DNStateManager = (function() {
 		};
 		return O5;
 	})(createjs.Container),
+	//DN资产管理器
 	DNAssetsManager = (function() {
 		function S5(m5, b5, h5, O5, W5) {
 			this.imageNameToSpriteSheetName = {};
@@ -3427,8 +3444,7 @@ var DNStateManager = (function() {
 		};
 		return S5;
 	})(),
-
-	//add by nada 游戏配置
+	//游戏配置
 	DNGameConfig = (function() {
 		function h5() {}
 		var O5 = function(m5) {
@@ -3490,7 +3506,7 @@ var DNStateManager = (function() {
 		O5(C7N8y.Q72);
 		return h5;
 	})(),
-
+	//delete by nada DNLanguageSelector to backup.js not work
 	DNLanguageSelector = (function(R5) {
 		var G5 = "flags/";
 		var S5 = function(m5) {
@@ -3604,6 +3620,7 @@ var DNStateManager = (function() {
 		t5(C7N8y.L8U);
 		return P5;
 	})(DNFlatButton),
+	//DN加载杆
 	DNLoadingBar = (function(R5) {
 		function G5(m5, b5, h5, O5) {
 			var W5 = "Loading: 100%";
@@ -3640,6 +3657,7 @@ var DNStateManager = (function() {
 		};
 		return G5;
 	})(createjs.Container),
+	//logo占位符
 	DNLogoPlaceholder = (function(G5) {
 		function S5(m5, b5) {
 			var h5 = "#ff0000";
@@ -3710,6 +3728,7 @@ var DNStateManager = (function() {
 		};
 		return S5;
 	})(DNGUIObject),
+	//DN占位符
 	DNPlaceholder = (function(m5) {
 		function b5() {
 			m5.call(this);
@@ -3717,6 +3736,7 @@ var DNStateManager = (function() {
 		__extends(b5, m5);
 		return b5;
 	})(DNGUIObject),
+	//DN进度条
 	DNProgressBar = (function(O5) {
 		function W5(m5, b5) {
 			O5.call(this);
@@ -3742,8 +3762,7 @@ var DNStateManager = (function() {
 		};
 		return W5;
 	})(DNGUIObject),
-
-	// add by nada 声音管理
+	//声音管理
 	DNSoundManager = (function() {
 		var O5 = "win";
 		var W5 = "exchange";
@@ -3940,6 +3959,7 @@ var DNStateManager = (function() {
 		j3(C7N8y.k72);
 		return r3;
 	})(),
+	//DN静态图片
 	DNStaticPicture = (function(b5) {
 		function h5(m5) {
 			b5.call(this);
@@ -4032,6 +4052,7 @@ var DNStateManager = (function() {
 		d3(O5);
 		return r3;
 	})(),
+	//掉落的糖果
 	FallingCandy = (function(b5) {
 		function h5() {
 			var m5 = ((1.2770E3, 131) <= 0x7E ? (143, 130.) : (113., 1.22E3) < 53.7E1 ? 0x80 : 22.3E1 <= (0x150, 0x1F6) ? (1.130E2, 1.6) : (59.6E1, 0x1A3));
@@ -4053,6 +4074,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(DNGameObject),
+	//飞行点
 	FlyingPoints = (function(W5) {
 		function R5(m5) {
 			var b5 = function() {
@@ -4097,7 +4119,6 @@ var DNStateManager = (function() {
 		};
 		return R5;
 	})(DNGameObject),
-
 	//游戏数据
 	GameData = (function() {
 		var R5 = "5";
@@ -4426,6 +4447,7 @@ var DNStateManager = (function() {
 		};
 		return O5;
 	})(DNGameObject),
+	//果冻
 	Jellier = (function(W5) {
 		function R5(m5, b5, h5, O5) {
 			W5.call(this);
@@ -4458,6 +4480,7 @@ var DNStateManager = (function() {
 		};
 		return R5;
 	})(DNGameObject),
+	//消色效果
 	KillColorEffect = (function(R5) {
 		function G5(m5, b5) {
 			R5.call(this);
@@ -4486,6 +4509,7 @@ var DNStateManager = (function() {
 		};
 		return G5;
 	})(DNGameObject),
+	//杀伤线效应
 	KillLineEffect = (function(b5) {
 		function h5(m5) {
 			b5.call(this);
@@ -4528,6 +4552,7 @@ var DNStateManager = (function() {
 		return h5;
 	})(DNGameObject),
 	//delete by nada(go to levels.js)
+	//地图编辑芯片
 	MapEditorChip = (function(G5) {
 		function S5(b5, h5, O5) {
 			G5.call(this);
@@ -4702,7 +4727,7 @@ var DNStateManager = (function() {
 		return S5;
 	})(DNGameObject),
 	//add by nada goto MapEditorState backup.js because not work
-
+	//移动提示
 	MoveHint = (function(O5) {
 		function W5(m5) {
 			O5.call(this);
@@ -4749,6 +4774,7 @@ var DNStateManager = (function() {
 		};
 		return W5;
 	})(DNGameObject),
+	//暂停状态
 	PauseState = (function(g3) {
 		function J5() {
 			var b5 = function(m5) {
@@ -4818,8 +4844,7 @@ var DNStateManager = (function() {
 		};
 		return J5;
 	})(PopupState),
-
-	//add by nada 点击开始预习准备
+	//点击开始预习准备
 	PlayState = (function(c3) {
 		var l3 = "LOSE_TYPE_TIME";
 		var S3 = "LOSE_TYPE_MOVES";
@@ -4920,6 +4945,7 @@ var DNStateManager = (function() {
 				this.addGameObjectAtPos(new Cloud(C7N8y.s22), this, Utils.RandomRange(C7N8y.W8U, C7N8y.L32), Utils.RandomRange(C7N8y.N7U, C7N8y.g92));
 			}
 			B5.g_instance = this;
+			//add by nada 获取战局游戏详细
 			var K5 = GameData.getInstance().getLevelDef(b5);
 			this.bombProb = K5.bombProb;
 			this.bombCounter = K5.bombCounter;
@@ -5270,6 +5296,7 @@ var DNStateManager = (function() {
 			}
 			return m5;
 		};
+		//add by nada 运行启动时间
 		B5.prototype.runSplashTime = function() {
 			if (C7N8y.e1u(this.loseType, B5.LOSE_TYPE_MOVES)) {
 				this.addGameObject(new SplashTimeEffect(Math.min(Math.floor(C7N8y.a1u(this.moves, C7N8y.L8U)) + C7N8y.T8U, C7N8y.d8U)));
@@ -5289,6 +5316,7 @@ var DNStateManager = (function() {
 				W5.convertToBomb(this.bombCounter);
 			}
 		};
+		//创建具有颜色ID目标
 		B5.prototype.createChipWithColorID = function(m5, b5, h5, O5) {
 			var W5 = new Chip(O5, m5, b5, this.getYPosByYIndex(b5), h5);
 			W5.setIncexes(m5, b5);
@@ -6055,6 +6083,7 @@ var DNStateManager = (function() {
 				DNSoundManager.g_instance.play(DNSoundManager.SOUND_WIN);
 			}
 		};
+		//add by nada 计算添加 匹配类型
 		B5.prototype.addPointsAt = function(m5, b5) {
 			if (C7N8y.Z9O(m5.getBonusType(), C7N8y.S22)) {
 				var h5 = C7N8y.j92;
@@ -6272,6 +6301,7 @@ var DNStateManager = (function() {
 			}
 			return this.field[m5][b5].getColorID();
 		};
+		//add by nada 轮班结束
 		B5.prototype.onShiftEnded = function(m5) {
 			if (C7N8y.J7O(this.liveTime, this.lastDropSoundTime + C7N8y.I32)) {
 				this.lastDropSoundTime = this.liveTime;
@@ -6572,6 +6602,7 @@ var DNStateManager = (function() {
 		O0(l3);
 		return B5;
 	})(DNGameState),
+	//纵向锁定状态
 	PortraitLockState = (function(R5) {
 		function G5() {
 			var m5 = "#4aa4c2";
@@ -6600,6 +6631,7 @@ var DNStateManager = (function() {
 		};
 		return G5;
 	})(DNGameState),
+	//预加载状态
 	PreloaderState = (function(S5) {
 		function t5(b5, h5, O5, W5) {
 			var R5 = "#666666";
@@ -6620,6 +6652,7 @@ var DNStateManager = (function() {
 		t5.prototype.onOrientationChanged = function(m5) {};
 		return t5;
 	})(DNGameState),
+	//运行糖果效果
 	RunLolipopEffect = (function(h5) {
 		function O5() {
 			h5.call(this);
@@ -6661,6 +6694,7 @@ var DNStateManager = (function() {
 		};
 		return O5;
 	})(DNGameObject),
+	//保存助推器按钮
 	SaveBoosterButton = (function(O5) {
 		function W5(m5, b5, h5) {
 			O5.call(this, m5, b5, h5);
@@ -6668,6 +6702,7 @@ var DNStateManager = (function() {
 		__extends(W5, O5);
 		return W5;
 	})(BoosterButtonBase),
+	//选择助推器按钮
 	SelectBoosterButton = (function(O5) {
 		function W5(m5, b5) {
 			var h5 = this;
@@ -6688,6 +6723,7 @@ var DNStateManager = (function() {
 		};
 		return W5;
 	})(BoosterButtonBase),
+	//选择助推器状态
 	SelectBoosterState = (function(e3) {
 		function q3(b5) {
 			var h5 = function(m5) {
@@ -6799,6 +6835,7 @@ var DNStateManager = (function() {
 		};
 		return q3;
 	})(PopupState),
+	//选择级别按钮
 	SelectLevelButton = (function(Q5) {
 		function u5(b5, h5) {
 			var O5 = 0.82;
@@ -6892,6 +6929,7 @@ var DNStateManager = (function() {
 		};
 		return u5;
 	})(DNJellyButton),
+	//选择级别状态
 	SelectLevelState = (function(C0) {
 		function s0(m5) {
 			var b5 = "map_";
@@ -7137,6 +7175,7 @@ var DNStateManager = (function() {
 		s0.prototype.alignByCenter = function(m5) {};
 		return s0;
 	})(DNGameState),
+	//状态下的阴影
 	ShadeInState = (function(h5) {
 		function O5(m5) {
 			var b5 = this;
@@ -7167,6 +7206,7 @@ var DNStateManager = (function() {
 		};
 		return O5;
 	})(DNGameState),
+	//遮蔽状态
 	ShadeOutState = (function(b5) {
 		function h5() {
 			var m5 = this;
@@ -7190,6 +7230,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(DNGameState),
+	//表现出惊人的效果
 	ShowAwesomeEffect = (function(b5) {
 		function h5() {
 			b5.call(this);
@@ -7248,6 +7289,7 @@ var DNStateManager = (function() {
 		};
 		return R5;
 	})(DNGUIObject),
+	//飞溅时间效应
 	SplashTimeEffect = (function(b5) {
 		function h5(m5) {
 			b5.call(this);
@@ -7268,6 +7310,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(DNGameObject),
+	//启动时间消息
 	SplashTimeMessage = (function(G5) {
 		function S5() {
 			var b5 = function() {
@@ -7301,6 +7344,7 @@ var DNStateManager = (function() {
 		__extends(S5, G5);
 		return S5;
 	})(DNGameObject),
+	//卓越的效果
 	SuperbEffect = (function(b5) {
 		function h5() {
 			b5.call(this);
@@ -7333,6 +7377,7 @@ var DNStateManager = (function() {
 		};
 		return h5;
 	})(DNGameObject),
+	//任务效应
 	TaskEffect = (function(S5) {
 		function t5(b5) {
 			var h5 = function() {
@@ -7382,6 +7427,7 @@ var DNStateManager = (function() {
 		__extends(t5, S5);
 		return t5;
 	})(DNGameObject),
+	//时间效应
 	TimeIsUpEffect = (function(O5) {
 		function W5(m5) {
 			O5.call(this);
@@ -7495,6 +7541,7 @@ var DNStateManager = (function() {
 		};
 		return G5;
 	})(),
+	//赢的状态
 	WinState = (function(w0) {
 		function V0(b5, h5, O5) {
 			var W5 = 1700;

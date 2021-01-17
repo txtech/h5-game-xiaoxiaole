@@ -860,9 +860,8 @@ var DNStateManager = (function() {
 				return;
 			}
 			if (m5) {
-				//add by nada (默认：700*900)
+				//add by nada 手机适配问题，默认：700*900比例
 				if (C7N8y.b24(Constants.ASSETS_HEIGHT, Constants.SCREEN_HEIGHT) && !this.haveFill) {
-					// debugger
 					this.haveFill = C7N8y.s22;
 					var b5 = DNAssetsManager.g_instance.getImage(Images.FILL_BOTTOM);
 					this.addChild(b5);

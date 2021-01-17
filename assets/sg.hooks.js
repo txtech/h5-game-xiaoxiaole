@@ -19,7 +19,6 @@ var SG_Hooks = {
         // Play68.setRankingLevelScoreDesc(level+1,score);
 	},
 	gameOver : function( level, score, callback){
-        debugger
         SG_Hooks.debug && console.log('Hooks game over level:' + level);
         SG_Hooks.debug && console.log('Hooks game over score:' + score);
 		SG.trigger({type:'gameOver', score:score}, callback);

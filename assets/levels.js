@@ -4056,15 +4056,27 @@ Levels = (function() {
             [C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.A8U, C7N8y.A8U, C7N8y.S8U, C7N8y.A8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U],
             [C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.A8U, C7N8y.A8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U]
         ],
+        //闯关类型
         "chip_types": C7N8y.S8U,
-        "moves": C7N8y.c8U,
+        //步数移动
+       // "moves": C7N8y.c8U,
+        "moves": 1,
+        //时间
         "time": C7N8y.W8U,
+        //闯关目标
         "chip_goal": C7N8y.A8U,
-        "chip_goal_count": C7N8y.W12,
+        //闯关目标金币数量
+        //"chip_goal_count": C7N8y.W12,
+        "chip_goal_count": 25,
+        //目标
         "goal": C7N8y.O82,
+        //得分目标计数
         "score_goal_count": C7N8y.W8U,
+        //炸弹
         "bombProb": C7N8y.W8U,
-        "bombCounter": C7N8y.J12
+        //炸弹计数器
+        //"bombCounter": C7N8y.J12
+        "bombCounter": 1
     };
     K5.LEVEL_SECOND = {
         "form": [

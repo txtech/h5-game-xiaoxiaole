@@ -95,9 +95,9 @@ var SG = {
                     }
             };
             head.insertBefore(script, head.firstChild);
-            if(SG.debug) console.log('loading '+script.src+', '+files.length+' files left.');
+            // if(SG.debug) console.log('loading '+script.src+', '+files.length+' files left.');
         }else if( typeof callback == 'function' ){
-            if(SG.debug) console.log('calling callback');
+            if(SG.debug) console.log('loadJsFiles calling callback');
             callback();
         }
     },

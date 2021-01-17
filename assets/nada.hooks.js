@@ -14,7 +14,7 @@ var NADA_Hooks = {
         };
         this.XHRPost(this.getUrl("getUserInfo"),reqData,function (r) {
             try {
-                SG_Hooks.debug && console.log('NadaHooks http response:' + r.response);
+                // SG_Hooks.debug && console.log('NadaHooks http response:' + r.response);
                 var data = JSON.parse(r.response);
                 if (!data || !data.ok){
                     SG_Hooks.getPlayId();

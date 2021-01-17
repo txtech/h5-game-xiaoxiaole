@@ -4305,8 +4305,8 @@ var DNStateManager = (function() {
 		d3(C7N8y.N82);
 		return h3;
 	})(),
+	//add by nada 游戏结束 当前等级 当前分数 失败原因
 	GameOverState = (function(u5) {
-		//add by nada 游戏结束 当前等级 当前分数 失败原因
 		function d3(b5, h5, O5) {
 			var W5 = function() {
 				P5.x = -C7N8y.q62;

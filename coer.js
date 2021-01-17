@@ -14404,9 +14404,10 @@ var DNStateManager = (function() {
 			this.addGuiObject(this.booster2);
 			this.update(C7N8y.W8U);
 			try {
-				SG_Hooks.start('PlayState',B5.g_curLevel);
+				SG_Hooks.start('PlayState');
+				SG_Hooks.selectLevel(B5.g_curLevel);
 			} catch (m5) {
-				var q0 = "error SG_Hooks start;";
+				var q0 = "error SG_Hooks start;"+m5;
 				console.log(q0);
 			}
 		}
@@ -16021,6 +16022,8 @@ var DNStateManager = (function() {
 		}
 		__extends(u5, Q5);
 		u5.prototype.onTouch = function() {
+			//add by nada 选择等级按钮
+			SG_Hooks.selectLevel(this.levelNum);
 			var m5 = new SelectBoosterState(this.levelNum);
 			m5.shader.visible = C7N8y.Q72;
 			DNStateManager.g_instance.pushState(m5);

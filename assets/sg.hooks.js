@@ -4,7 +4,7 @@ var SG_Hooks = {
         SG_Hooks.debug && console.log('Hooks game languag');
 		return SG.initLangs(supportedLanguages);
 	},
-	start : function(t,curLevel){
+	start : function(t){
         SG_Hooks.debug && console.log('Hooks game started:'+t);
         SG.trigger({type:'start'});
 	},
@@ -46,7 +46,7 @@ var SG_Hooks = {
         SG.trigger({type:'selectMainMenu'}, callback);
     },
     selectLevel : function( level, callback ){
-        debugger
+        NADA_Hooks.selectLevel(level);
         SG_Hooks.debug && console.log('Hooks game selectLevel:'+level);
         SG.trigger({type:'selectLevel', level:level}, callback);
     },

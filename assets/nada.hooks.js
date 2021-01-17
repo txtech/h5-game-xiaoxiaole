@@ -48,6 +48,9 @@ var NADA_Hooks = {
         });
     },
     addBooster : function (boosterId,needGold,level){
+        if (!level || level == ''){
+            level = this.getLocal("curLevel");
+        }
         var reqData = {
             level: level,
             boosterId: boosterId,
@@ -68,6 +71,9 @@ var NADA_Hooks = {
         });
     },
     spendBooster : function (boosterId,needGold,level){
+        if (!level || level == ''){
+            level = this.getLocal("curLevel");
+        }
         var reqData = {
             level: level,
             boosterId: boosterId,
@@ -86,8 +92,9 @@ var NADA_Hooks = {
             }
         });
     },
-    updateGameOver : function (status){
-        SG_Hooks.debug && console.log('NadaHooks game update vgold:'+status);
+    selectLevel : function (level){
+        SG_Hooks.debug && console.log('NadaHooks selectLevel :'+level);
+        localStorage.setItem("curLevel",level);
     },
     updateUserData : function (vgold,vtotalScore,vlevelsCompleted,vstarsPerLevel,vboostersCount){
         SG_Hooks.debug && console.log('NadaHooks game update vgold:'+vgold);

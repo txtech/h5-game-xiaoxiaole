@@ -12788,7 +12788,7 @@ var DNStateManager = (function() {
 			}
 			this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)] --;
 			var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
-			NADA_Hooks.spendBooster(index,0);
+			NADA_Hooks.spendBooster(index);
 			this.save();
 		};
         //add by nada 购买道具

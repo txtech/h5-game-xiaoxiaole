@@ -70,7 +70,7 @@ var NADA_Hooks = {
             }
         });
     },
-    spendBooster : function (boosterId,needGold,level){
+    spendBooster : function (boosterId,level){
         if (!level || level == ''){
             level = this.getLocal("curLevel");
         }

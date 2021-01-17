@@ -12778,6 +12778,7 @@ var DNStateManager = (function() {
 				bombCounter: C7N8y.W8U
 			};
 		}
+		//add by nada 使用道具
 		h3.prototype.spendBooster = function(m5) {
 			var b5 = "BUG HERE";
 			if (Constants.DEBUG_MODE) {
@@ -12790,19 +12791,22 @@ var DNStateManager = (function() {
 			NADA_Hooks.spendBooster(index,0);
 			this.save();
 		};
+        //add by nada 购买道具
 		h3.prototype.addBooster = function(m5,gold) {
 			this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)] ++;
-			//add by nada 购买道具
 			var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
 			NADA_Hooks.addBooster(index,gold,0);
 			this.save();
 		};
+        //add by nada 获取道具
 		h3.prototype.getBoostersCount = function(m5) {
 			return this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)];
 		};
+        //add by nada 获取道具价格
 		h3.prototype.getBoostPrice = function(m5) {
 			return this.prices[this.ALL_BOOSTERS_NAMES.indexOf(m5)];
 		};
+        //add by nada 添加金币
 		h3.prototype.addGold = function(m5) {
 			this.gold += m5;
 		};
@@ -12832,12 +12836,6 @@ var DNStateManager = (function() {
 			}
 		};
 		h3.prototype.load = function() {
-			/*try {
-				NADA_Hooks.initUserData(k6S46[K46]['localStorage']);
-			} catch (e) {
-				var q0 = "error NADA_Hooks initUserData" + e;
-				console.log(q0);
-			}*/
 			try {
 				this.levelsCompleted = +k6S46[K46]['localStorage'].getItem(this.LEVELS_COMPLETED) || 0;
 				this.totalScore = +k6S46[K46]['localStorage'].getItem(this.TOTAL_SCORE) || 0;
@@ -12855,6 +12853,7 @@ var DNStateManager = (function() {
 				}
 			} catch (m5) {}
 		};
+		//赢升级
 		h3.prototype.onWinLevel = function(m5, b5, h5) {
 			this.totalScore += b5;
 			this.starsPerLevel[m5] = Math.max(this.starsPerLevel[m5], h5);
@@ -12875,7 +12874,7 @@ var DNStateManager = (function() {
 			}
 			return this.levelsCompleted + C7N8y.T8U;
 		};
-		//add by nada 从所有战局中获取战场
+		//add by nada 从所有战局中获取等级
 		h3.prototype.getLevelDef = function(m5) {
 			if (m5 == -C7N8y.T8U) {
 				return this.mapEditorLevel;
@@ -16751,10 +16750,12 @@ var DNStateManager = (function() {
 			this.panel.addChild(Q3);
 			d3();
 			Q5();
+
 			//add by nada 添加金币规则：星级*15
 			var winRewardGold = NADA_Hooks.getGameConfig("win.reward.gold");
 			//var e3 = C7N8y.n1p(O5, C7N8y.W12);
 			var e3 = C7N8y.n1p(O5,winRewardGold);
+
 			var q3 = new DNTextField(C7N8y.r32 + e3, DNFontDef.FLYING_POINTS);
 			this.panel.addChild(q3);
 			q3.x = this.goldLabel.x + this.goldLabel.getBounds().width + 10;
@@ -16771,6 +16772,8 @@ var DNStateManager = (function() {
 				alpha: C7N8y.W8U
 			}, C7N8y.u5m, createjs.Ease.linear);
 			this.oldGold = GameData.getInstance().getGold();
+
+            //add by nada 本地添加金币
 			GameData.getInstance().addGold(e3);
 			this.newGold = GameData.getInstance().getGold();
 			var g0 = [C7N8y.l72, C7N8y.t72, C7N8y.l72];

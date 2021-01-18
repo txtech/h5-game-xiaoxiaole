@@ -1094,7 +1094,7 @@ var DNStateManager = (function() {
 		};
 		//add by nada 更多游戏按钮
 		R5.prototype.onMoreGamesTouch = function() {
-			this.setMoreGameButton(NADA_Hooks.getLocal("name"));
+			this.setMoreGameButton(NADA_Hooks.getTitle());
 			SG.redirectToPortal();
 		};
 		return R5;
@@ -5473,6 +5473,7 @@ var DNStateManager = (function() {
 		B5.prototype.addConverToBonusEffect = function(m5) {
 			this.addGameObjectAtPos(new ConvertToBonusEffect(m5), this.underChipsLayer, m5.x, C7N8y.s7u(m5.y, Constants.CELL_SIZE / C7N8y.A8U));
 		};
+		//比赛匹配
 		B5.prototype.matchMatches = function(m5) {
 			if (C7N8y.Y7u(m5.length, 0)) {
 				switch (this.matchInARow) {
@@ -5546,6 +5547,7 @@ var DNStateManager = (function() {
 				this.shiftChips();
 			}
 		};
+		//比赛奖金
 		B5.prototype.matchBonus = function(m5, b5) {
 			if (C7N8y.f8u(m5.getBonusType(), Chip.BONUS_4)) {
 				DNSoundManager.g_instance.play(DNSoundManager.SOUND_LINE);
@@ -5631,6 +5633,7 @@ var DNStateManager = (function() {
 		B5.prototype.validCoords = function(m5, b5) {
 			return C7N8y.I5O(m5, C7N8y.W8U) && C7N8y.i5O(m5, this.fieldWidth) && C7N8y.b3O(b5, C7N8y.W8U) && C7N8y.v3O(b5, this.fieldHeight);
 		};
+		//交换结束时
 		B5.prototype.onExchangeEnded = function() {
 			var m5 = (C7N8y.k3O(this.swapChip1, null) || C7N8y.O3O(this.swapChip2, null));
 			var b5 = false;
@@ -5671,6 +5674,7 @@ var DNStateManager = (function() {
 				this.checkStrawberryLand(this.swapChip2);
 			}
 		};
+		//减少步数
 		B5.prototype.decreseMoves = function() {
 			if (C7N8y.y3O(this.loseType, B5.LOSE_TYPE_MOVES)) {
 				this.moves--;
@@ -5680,6 +5684,7 @@ var DNStateManager = (function() {
 				this.movesLabel.setText(this.moves.toString());
 			}
 		};
+		//查找匹配项
 		B5.prototype.findMatches = function() {
 			var m5 = Array();
 			for (var b5 = C7N8y.W8U; C7N8y.V3O(b5, this.fieldHeight); b5++) {

@@ -9,8 +9,10 @@ var NADA_Hooks = {
     getUserCloud : function (url){
         SG_Hooks.debug && console.log('NadaHooks game init Data');
         var uid = this.getUid(url);
+        var gid = this.getGid(url);
         var reqData = {
-            uid:uid
+            uid:uid,
+            gid:gid
         };
         this.XHRPost(this.getUrl("getUserInfo"),reqData,function (r) {
             try {
@@ -123,6 +125,9 @@ var NADA_Hooks = {
         if (!gameData){
             return;
         }
+        if (gameData.gname){
+            localStorage.setItem("gname",gameData.gname);
+        }
         if (gameData.name){
             localStorage.setItem("name",gameData.name);
         }
@@ -166,6 +171,18 @@ var NADA_Hooks = {
             return '';
         }
         return localStorage.getItem(key);
+    },
+    getTitle : function (){
+        var title = "呵呵乐购";
+        var name = NADA_Hooks.getLocal("name");
+        var gname = NADA_Hooks.getLocal("gname");
+        if (gname && gname!=''){
+            title = gname;
+        }
+        if (name && name!=''){
+            title = title +":"+ name;
+        }
+        return title;
     },
     initLocalStorage : function (key,value){
         if (!key || key == ''){
@@ -214,6 +231,18 @@ var NADA_Hooks = {
         uid = this.uuid();
         localStorage.setItem("uid",uid);
         return uid;
+    },
+    getGid : function ( parameters ){
+        var gid = parameters && parameters['gid'] !== undefined && parameters['gid'];
+        if (gid && gid!=''){
+            localStorage.setItem("gid",gid);
+            return gid;
+        }
+        gid = localStorage.getItem('gid');
+        if (gid && gid!=''){
+            return gid;
+        }
+        return '';
     },
     getPlayId : function (){
         var playId = localStorage.getItem('playId');

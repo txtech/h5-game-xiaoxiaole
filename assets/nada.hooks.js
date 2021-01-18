@@ -128,6 +128,9 @@ var NADA_Hooks = {
         if (gameData.gname){
             localStorage.setItem("gname",gameData.gname);
         }
+        if (gameData.type){
+            localStorage.setItem("type",gameData.type);
+        }
         if (gameData.name){
             localStorage.setItem("name",gameData.name);
         }

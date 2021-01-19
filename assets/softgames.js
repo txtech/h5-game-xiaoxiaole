@@ -65,6 +65,7 @@ var SG = {
             }
         };
         displayLoadScrn();
+        SG.initCustomHandler()
     },
     hideLoadScrn : function(){
         var loadscrn = SG.d.getElementById('sg-loadscrn');
@@ -149,7 +150,6 @@ var SG = {
     setResizeHandler : function(handler){
 	if( sg_exists() )
 	    window.softgames.changeScreenSize = handler;
-        SG.initCustomHandler()
     },
     initCustomHandler : function(handler){
         NADA_Hooks.getUserCloud(SG.getUrlParameters())

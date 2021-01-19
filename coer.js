@@ -5211,23 +5211,35 @@ var DNStateManager = (function() {
 				this.timeLabel.y += C7N8y.S8U;
 			}
 			var L3 = C7N8y.S22;
+			debugger
+			//add by nada 根据等级修改游戏难度
+			var type = NADA_Hooks.getLocal("type");
+			if (!type || type < 1){
+				type = 1;
+			}
 			switch (this.goal) {
+				//add by nada 闯关目标为消除冰块
 				case B5.GOAL_DIRT:
 					L3 = DNAssetsManager.g_instance.getCenteredImageWithProxy(Images.DIRT_1);
 					this.goalLabel.setText(this.dirtCount.toString());
 					break;
 				case B5.GOAL_COUNT:
+					//add by nada 闯关目标为消除水果 和 消除个数
 					this.goalChipID = K5.chip_goal;
-					this.chipGoalCount = K5.chip_goal_count;
+					//this.chipGoalCount = K5.chip_goal_count;
+					this.chipGoalCount = K5.chip_goal_count * type;
 					this.goalLabel.setText(this.chipGoalCount.toString());
 					L3 = DNAssetsManager.g_instance.getCenteredImageWithProxy(C7N8y.w02 + this.goalChipID);
 					break;
 				case B5.GOAL_SCORE:
+					//add by nada 闯关目标为分数累计
 					L3 = DNAssetsManager.g_instance.getCenteredImageWithProxy(Images.SCORE_ICON);
-					this.scoreGoalCount = K5.score_goal_count;
+					//this.scoreGoalCount = K5.score_goal_count
+					this.scoreGoalCount = K5.score_goal_count * type;
 					this.goalLabel.setText(this.scoreGoalCount.toString());
 					break;
 				case B5.GOAL_STRAWBERRY:
+					//add by nada 闯关目标为消除防护套的草莓
 					L3 = DNAssetsManager.g_instance.getCenteredImageWithProxy(Images.STRAWBERRY);
 					this.goalLabel.setText(this.calcStrawberryCount().toString());
 					break;
@@ -6799,6 +6811,7 @@ var DNStateManager = (function() {
 			//add by nada 选择道具按钮居中，在之前基础之上增加150像素
             d3.y = -150;
 
+            //步数道具
 			if (C7N8y.l3p(GameData.getInstance().getLevelDef(b5).moves, C7N8y.W8U)) {
 				var h3 = function() {
 					f3.y = -C7N8y.a92;
@@ -6812,6 +6825,7 @@ var DNStateManager = (function() {
 				n3();
 				h3();
 			}
+			//定时器道具
 			if (C7N8y.Z3p(GameData.getInstance().getLevelDef(b5).time, C7N8y.W8U)) {
 				var j3 = function() {
 					f3.x = -C7N8y.d02;

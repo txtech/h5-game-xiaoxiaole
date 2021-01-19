@@ -59,7 +59,7 @@ LevelDef = (function() {
 })(),
 Levels2 = (function() {
     var t5 = function() {
-        K5.Levels2 = [K5.LEVEL_FIRST, K5.LEVEL_SECOND, K5.CLEAR_EDU, K5.CLEAR_SIMPLE, K5.JUST_SIMPLE, K5.STRAWBERRY_EDU, K5. CHOCO_EDU, K5.LEVEL_9, K5.BOMBS_EDU, K5.LOT_OF_BOMBS, K5.STONE_EDU, K5.BOMBS_AN_TIME, K5.LEVEL_8, K5.LEVEL_6, K5.LEVEL_7, K5.LEVEL_29, K5.YELLOW_FOR_TIME, K5.MID_LEVEL, K5.SCORE_AND_TIME, K5.MIDDLE_FUN, K5.CLEAR_FOR_TIME, K5.MID, K5.JUST_MID, K5.LEVEL_37, K5.LEVEL_30, K5.LEVEL_1, K5.LEVEL_21, K5.LEVEL_22, K5.LEVEL_23, K5.LEVEL_25, K5.LEVEL_26, K5.LEVEL_18, K5.LEVEL_19, K5.LEVEL_3, K5.LEVEL_5, K5.LEVEL_10, K5.LEVEL_15, K5.LEVEL_16, K5.LEVEL_17, K5.LEVEL_20, K5.LEVEL_27, K5.LEVEL_11, K5.LEVEL_13, K5.LEVEL_28, K5.LEVEL_32, K5.LEVEL_33, K5.LEVEL_34, K5.LEVEL_35, K5.LEVEL_36, K5.LEVEL_4, K5.LEVEL_12, K5.LEVEL_24, K5.LEVEL_38, K5.CHESS, K5.LEVEL_14, K5.LEVEL_31, K5.LEVEL_2, K5.BIT_RANDOM_HARD, K5.FUN_CHOCO_HARD, K5.JUST_SCORE_HARD];
+        K5.Levels2 = [K5.LEVEL_FIRST, K5.LEVEL_SECOND, K5.CLEAR_EDU, K5.CLEAR_SIMPLE, K5.JUST_SIMPLE, K5.STRAWBERRY_EDU, K5. CHOCO_EDU, K5.LEVEL_9, K5.BOMBS_EDU, K5.LOT_OF_BOMBS, K5.STONE_EDU, K5.BOMBS_AN_TIME, K5.LEVEL_8, K5.LEVEL_6, K5.LEVEL_7, K5.LEVEL_29, K5.YELLOW_FOR_TIME, K5.MID_LEVEL, K5.SCORE_AND_TIME,K5.MIDDLE_FUN, K5.CLEAR_FOR_TIME, K5.MID, K5.JUST_MID, K5.LEVEL_37, K5.LEVEL_30, K5.LEVEL_1, K5.LEVEL_21, K5.LEVEL_22, K5.LEVEL_23, K5.LEVEL_25, K5.LEVEL_26, K5.LEVEL_18, K5.LEVEL_19, K5.LEVEL_3, K5.LEVEL_5, K5.LEVEL_10, K5.LEVEL_15, K5.LEVEL_16, K5.LEVEL_17, K5.LEVEL_20, K5.LEVEL_27, K5.LEVEL_11, K5.LEVEL_13, K5.LEVEL_28, K5.LEVEL_32, K5.LEVEL_33, K5.LEVEL_34, K5.LEVEL_35, K5.LEVEL_36, K5.LEVEL_4, K5.LEVEL_12, K5.LEVEL_24, K5.LEVEL_38, K5.CHESS, K5.LEVEL_14, K5.LEVEL_31, K5.LEVEL_2, K5.BIT_RANDOM_HARD, K5.FUN_CHOCO_HARD, K5.JUST_SCORE_HARD];
     };
     function K5() {}
     K5.LEVEL_1 = {
@@ -281,7 +281,7 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.D6U, M5Y8y.q6U, M5Y8y.j6U, M5Y8y.q6U, M5Y8y.s6U]
             ],
             "chip_types": M5Y8y.D6U,
-            "moves": M5Y8y.z6U,
+            "moves": M5Y8y.z6U/2,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
             "chip_goal_count": M5Y8y.j6U,
@@ -313,7 +313,7 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.D6U, M5Y8y.s6U, M5Y8y.q6U, M5Y8y.D6U, M5Y8y.P6U, M5Y8y.D6U, M5Y8y.D6U, M5Y8y.s6U, M5Y8y.s6U]
             ],
             "chip_types": M5Y8y.P6U,
-            "moves": M5Y8y.n6U,
+            "moves": M5Y8y.n6U/2,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
             "chip_goal_count": M5Y8y.j6U,
@@ -354,7 +354,7 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.q6U, M5Y8y.D6U, M5Y8y.P6U, M5Y8y.D6U, M5Y8y.D6U, M5Y8y.P6U, M5Y8y.D6U, M5Y8y.s6U]
             ],
             "chip_types": M5Y8y.P6U,
-            "moves": M5Y8y.y7U,
+            "moves": M5Y8y.y7U/2,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
             "chip_goal_count": M5Y8y.j6U,
@@ -398,7 +398,7 @@ Levels2 = (function() {
             "moves": M5Y8y.h7U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
-            "chip_goal_count": M5Y8y.m7U,
+            "chip_goal_count": M5Y8y.m7U * 3,
             "goal": M5Y8y.A7U,
             "score_goal_count": M5Y8y.s6U,
             "bombProb": M5Y8y.s6U,
@@ -1125,7 +1125,7 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.D6U, M5Y8y.P6U, M5Y8y.P6U, M5Y8y.j6U, M5Y8y.q6U, M5Y8y.j6U, M5Y8y.D6U, M5Y8y.j6U, M5Y8y.s6U]
             ],
             "chip_types": M5Y8y.P6U,
-            "moves": M5Y8y.i6U,
+            "moves": M5Y8y.i6U / 2,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
             "chip_goal_count": M5Y8y.j6U,
@@ -1507,23 +1507,15 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.P6U, M5Y8y.q6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
                 [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U]
             ],
-            //闯关类型
-            "chip_types": C7N8y.S8U,
-            "moves": 6, // 9
+            "chip_types": C7N8y.S8U,  //闯关类型
+            "moves": C7N8y.c8U,
             "time": C7N8y.W8U,
-            //闯关目标
-            "chip_goal": C7N8y.A8U,
-            //闯关目标金币数量
-            "chip_goal_count": 30, // 15
-            //目标
-            "goal": C7N8y.O82,
-            //得分目标计数
-            "score_goal_count": C7N8y.W8U,
-            //炸弹
-            "bombProb": C7N8y.W8U,
-            //炸弹计数器
-            //"bombCounter": C7N8y.J12
-            "bombCounter": 1
+            "chip_goal": C7N8y.A8U,   //闯关目标具体水果 //1西红柿： 2：西瓜 3:草莓 4：黄橙 5：葡萄 6：桃子 7：菠萝
+            "chip_goal_count": C7N8y.W12,  //闯关目标个数
+            "goal": C7N8y.O82, //闯关类型目标
+            "score_goal_count": C7N8y.W8U,  //闯关分数总数
+            "bombProb": C7N8y.W8U,  //炸弹
+            "bombCounter": C7N8y.J12 //炸弹计数器
         };
     K5.LEVEL_SECOND = {
             "form": [
@@ -1551,7 +1543,7 @@ Levels2 = (function() {
             "moves": M5Y8y.T7U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
-            "chip_goal_count": M5Y8y.i6U,
+            "chip_goal_count": M5Y8y.i6U * 2,
             "goal": M5Y8y.f6U,
             "score_goal_count": M5Y8y.Z6U,
             "bombProb": M5Y8y.s6U,
@@ -1619,7 +1611,7 @@ Levels2 = (function() {
             "chip_goal": M5Y8y.s6U,
             "chip_goal_count": M5Y8y.j6U,
             "goal": M5Y8y.f6U,
-            "score_goal_count": M5Y8y.F7U,
+            "score_goal_count": M5Y8y.F7U*2,
             "bombProb": M5Y8y.s6U,
             "bombCounter": M5Y8y.T7U
         };
@@ -1722,7 +1714,7 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.v7U, M5Y8y.m7U, M5Y8y.v7U, M5Y8y.E7U, M5Y8y.g7U, M5Y8y.b7U, M5Y8y.s6U, M5Y8y.s6U]
             ],
             "chip_types": M5Y8y.Y6U,
-            "moves": M5Y8y.d6U,
+            "moves": M5Y8y.d6U / 2,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
             "chip_goal_count": M5Y8y.j6U,
@@ -1757,7 +1749,7 @@ Levels2 = (function() {
             "moves": M5Y8y.T7U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.q6U,
-            "chip_goal_count": M5Y8y.m7U,
+            "chip_goal_count": M5Y8y.m7U * 4,
             "goal": M5Y8y.k7U,
             "score_goal_count": M5Y8y.s6U,
             "bombProb": M5Y8y.s6U,
@@ -1798,7 +1790,7 @@ Levels2 = (function() {
             "moves": M5Y8y.u6U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
-            "chip_goal_count": M5Y8y.m7U,
+            "chip_goal_count": M5Y8y.m7U * 3,
             "goal": M5Y8y.A7U,
             "score_goal_count": M5Y8y.s6U,
             "bombProb": M5Y8y.s6U,
@@ -1873,7 +1865,7 @@ Levels2 = (function() {
             "moves": M5Y8y.v7U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
-            "chip_goal_count": M5Y8y.b7U,
+            "chip_goal_count": M5Y8y.b7U * 3,
             "goal": M5Y8y.f6U,
             "score_goal_count": M5Y8y.w6U,
             "bombProb": M5Y8y.s6U,
@@ -1903,7 +1895,7 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.N6U, M5Y8y.X6U, M5Y8y.X6U, M5Y8y.X6U, M5Y8y.X6U, M5Y8y.j6U, M5Y8y.N6U, M5Y8y.s6U]
             ],
             "chip_types": M5Y8y.N6U,
-            "moves": M5Y8y.n6U,
+            "moves": M5Y8y.n6U /2,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
             "chip_goal_count": M5Y8y.j6U,
@@ -1939,7 +1931,7 @@ Levels2 = (function() {
             "moves": M5Y8y.m7U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.j6U,
-            "chip_goal_count": M5Y8y.b7U,
+            "chip_goal_count": M5Y8y.b7U * 2,
             "goal": M5Y8y.k7U,
             "score_goal_count": M5Y8y.s6U,
             "bombProb": M5Y8y.s6U,
@@ -1972,7 +1964,7 @@ Levels2 = (function() {
             "moves": M5Y8y.v7U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
-            "chip_goal_count": M5Y8y.b7U,
+            "chip_goal_count": M5Y8y.b7U * 3,
             "goal": M5Y8y.S6U,
             "score_goal_count": M5Y8y.s6U,
             "bombProb": M5Y8y.s6U,
@@ -2005,7 +1997,7 @@ Levels2 = (function() {
             "moves": M5Y8y.b7U,
             "time": M5Y8y.s6U,
             "chip_goal": M5Y8y.s6U,
-            "chip_goal_count": M5Y8y.b7U,
+            "chip_goal_count": M5Y8y.b7U * 3,
             "goal": M5Y8y.f6U,
             "score_goal_count": M5Y8y.W7U,
             "bombProb": M5Y8y.s6U,
@@ -2220,7 +2212,7 @@ Levels2 = (function() {
             "moves": M5Y8y.s6U,
             "time": M5Y8y.z6U,
             "chip_goal": M5Y8y.s6U,
-            "chip_goal_count": M5Y8y.m7U,
+            "chip_goal_count": M5Y8y.m7U * 5,
             "goal": M5Y8y.f6U,
             "score_goal_count": M5Y8y.p7U,
             "bombProb": M5Y8y.s6U,
@@ -2337,7 +2329,7 @@ Levels2 = (function() {
             "moves": M5Y8y.s6U,
             "time": M5Y8y.y6U,
             "chip_goal": M5Y8y.N6U,
-            "chip_goal_count": M5Y8y.n6U,
+            "chip_goal_count": M5Y8y.n6U * 2,
             "goal": M5Y8y.k7U,
             "score_goal_count": M5Y8y.s6U,
             "bombProb": M5Y8y.s6U,

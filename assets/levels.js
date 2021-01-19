@@ -4065,7 +4065,7 @@ Levels = (function() {
         "chip_goal": C7N8y.A8U,
         //闯关目标金币数量
         //"chip_goal_count": C7N8y.W12,
-        "chip_goal_count": 25,
+        "chip_goal_count": 3,
         //目标
         "goal": C7N8y.O82,
         //得分目标计数

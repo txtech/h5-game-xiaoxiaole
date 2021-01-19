@@ -2664,6 +2664,7 @@ var DNStateManager = (function() {
 		};
 		return r3;
 	})(PopupState),
+	//闯关
 	Chip = (function(J5) {
 		var F3 = "MATCH_REASON_I_AM_BONUS";
 		var Q5 = "MATCH_REASON_BONUS_EFFECT_4_VERT";
@@ -4299,7 +4300,14 @@ var DNStateManager = (function() {
 			if (m5 == -C7N8y.T8U) {
 				return this.mapEditorLevel;
 			}
-			return Levels.levels[m5];
+			var type = NADA_Hooks.getLocal("type");
+			if (3 == type){
+				return Levels3.Levels3[m5];
+			}else if (2 == type){
+				return Levels2.Levels2[m5];
+			}else{
+				return Levels.levels[m5];
+			}
 		};
 		h3.prototype.getTotalLevels = function() {
 			return Levels.levels.length;
@@ -4965,6 +4973,7 @@ var DNStateManager = (function() {
 			this.goal = K5.goal;
 			this.spawnDefinedChips(K5.chips);
 			var P5 = K5.form;
+			//add  by nada 游戏核心算法
 			for (var g3 = C7N8y.W8U; C7N8y.P0u(g3, this.fieldWidth); g3++) {
 				for (var J5 = C7N8y.W8U; C7N8y.t0u(J5, this.fieldHeight); J5++) {
 					if (C7N8y.B0u(P5[J5][g3], C7N8y.W8U)) {
@@ -7694,7 +7703,8 @@ var DNStateManager = (function() {
 					};
 					T0(C7N8y.Q72);
 				}
-				//add by nada 添加 e3 金币
+
+				//add by nada 添加 e3 金币(level, score, gold,start)
 				SG_Hooks.levelUp(b5, h5,e3,O5, function() {
 					if (musicFlag) createjs.Sound.play('music', 'none', 0, 0, -1, 1);
 				});

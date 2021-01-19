@@ -4058,12 +4058,12 @@ LevelDef = (function() {
             ],
             //闯关类型
             "chip_types": M3Y8y.S8U,
-            "moves": 5,//9
+            "moves": 3,//9
             "time": M3Y8y.W8U,
             //闯关目标
             "chip_goal": M3Y8y.A8U,
             //闯关目标金币数量
-            "chip_goal_count": 30, //15
+            "chip_goal_count": 60, //15
             //目标
             "goal": M3Y8y.O82,
             //得分目标计数

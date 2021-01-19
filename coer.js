@@ -5211,7 +5211,6 @@ var DNStateManager = (function() {
 				this.timeLabel.y += C7N8y.S8U;
 			}
 			var L3 = C7N8y.S22;
-			debugger
 			//add by nada 根据等级修改游戏难度
 			var type = NADA_Hooks.getLocal("type");
 			if (!type || type < 1){

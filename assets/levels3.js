@@ -4036,42 +4036,35 @@ LevelDef = (function() {
         //第一级
         K5.LEVEL_FIRST = {
             "form": [
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U, M3Y8y.T8U, M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.T8U, M3Y8y.T8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U]
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.j6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U]
             ],
-            "dirt": M3Y8y.S22,
+            "dirt": M5Y8y.L7U,
             "chips": [
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.A8U, M3Y8y.L8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.A8U, M3Y8y.L8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.A8U, M3Y8y.L8U, M3Y8y.A8U, M3Y8y.T8U, M3Y8y.L8U, M3Y8y.S8U, M3Y8y.A8U, M3Y8y.S8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.L8U, M3Y8y.L8U, M3Y8y.A8U, M3Y8y.A8U, M3Y8y.L8U, M3Y8y.A8U, M3Y8y.S8U, M3Y8y.A8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.A8U, M3Y8y.S8U, M3Y8y.T8U, M3Y8y.S8U, M3Y8y.S8U, M3Y8y.T8U, M3Y8y.S8U, M3Y8y.A8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.A8U, M3Y8y.A8U, M3Y8y.T8U, M3Y8y.L8U, M3Y8y.L8U, M3Y8y.A8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.A8U, M3Y8y.A8U, M3Y8y.S8U, M3Y8y.A8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U],
-                [M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.A8U, M3Y8y.A8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U, M3Y8y.W8U]
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.q6U, M5Y8y.D6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.q6U, M5Y8y.D6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.q6U, M5Y8y.D6U, M5Y8y.q6U, M5Y8y.j6U, M5Y8y.D6U, M5Y8y.P6U, M5Y8y.q6U, M5Y8y.P6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.D6U, M5Y8y.D6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.D6U, M5Y8y.q6U, M5Y8y.P6U, M5Y8y.q6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.q6U, M5Y8y.P6U, M5Y8y.j6U, M5Y8y.P6U, M5Y8y.P6U, M5Y8y.j6U, M5Y8y.P6U, M5Y8y.q6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.j6U, M5Y8y.D6U, M5Y8y.D6U, M5Y8y.q6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.P6U, M5Y8y.q6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
+                [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U]
             ],
-            //闯关类型
-            "chip_types": M3Y8y.S8U,
-            "moves": 3,//9
-            "time": M3Y8y.W8U,
-            //闯关目标
-            "chip_goal": M3Y8y.A8U,
-            //闯关目标金币数量
-            "chip_goal_count": 60, //15
-            //目标
-            "goal": M3Y8y.O82,
-            //得分目标计数
-            "score_goal_count": M3Y8y.W8U,
-            //炸弹
-            "bombProb": M3Y8y.W8U,
-            //炸弹计数器
-            "bombCounter": 0 //10
+            "chip_types": C7N8y.S8U,  //闯关类型
+            "moves": C7N8y.c8U,
+            "time": C7N8y.W8U,
+            "chip_goal": C7N8y.A8U,   //闯关目标具体水果 //1西红柿： 2：西瓜 3:草莓 4：黄橙 5：葡萄 6：桃子 7：菠萝
+            "chip_goal_count": C7N8y.W12,  //闯关目标个数
+            "goal": C7N8y.O82, //闯关类型目标
+            "score_goal_count": C7N8y.W8U,  //闯关分数总数
+            "bombProb": C7N8y.W8U,  //炸弹
+            "bombCounter": C7N8y.J12 //炸弹计数器
         };
         K5.LEVEL_SECOND = {
             "form": [

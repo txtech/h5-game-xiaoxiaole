@@ -5238,7 +5238,7 @@ var DNStateManager = (function() {
 					this.goalLabel.setText(this.scoreGoalCount.toString());
 					break;
 				case B5.GOAL_STRAWBERRY:
-					//add by nada 闯关目标为消除防护套的草莓
+					//add by nada 闯关目标为消除防护套的蓝莓
 					L3 = DNAssetsManager.g_instance.getCenteredImageWithProxy(Images.STRAWBERRY);
 					this.goalLabel.setText(this.calcStrawberryCount().toString());
 					break;
@@ -5325,7 +5325,7 @@ var DNStateManager = (function() {
 			}
 			this.addGameObjectAt(new SplashTimeMessage(), this);
 		};
-		//add by nada 创建目标
+		//add by nada 创建目标，从配置中随机(1-7个水果中拿一个)
 		B5.prototype.createChip = function(m5, b5, h5) {
 			var O5 = Utils.RandomRangeInt(C7N8y.T8U, this.chipTypesCount);
 			var W5 = new Chip(O5, m5, b5, this.getYPosByYIndex(b5), h5);
@@ -5839,6 +5839,7 @@ var DNStateManager = (function() {
 			}
 			this.onMouseDown(m5, b5);
 		};
+		//移位芯片
 		B5.prototype.shiftChips = function() {
 			this.matchInARow++;
 			var m5 = C7N8y.Q72;
@@ -5869,6 +5870,7 @@ var DNStateManager = (function() {
 				this.spawnNewChips();
 			}
 		};
+		//产生新的 闯关目标
 		B5.prototype.spawnNewChips = function() {
 			var m5 = C7N8y.W8U;
 			for (var b5 = C7N8y.W8U; C7N8y.J0O(b5, this.fieldWidth); b5++) {

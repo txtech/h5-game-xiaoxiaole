@@ -1507,7 +1507,7 @@ Levels2 = (function() {
                 [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.P6U, M5Y8y.q6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U],
                 [M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.j6U, M5Y8y.q6U, M5Y8y.q6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U, M5Y8y.s6U]
             ],
-            "chip_types": C7N8y.S8U,  //闯关类型
+            "chip_types": C7N8y.S8U,  //闯关类型(1-7个水果 随机出现一个)
             "moves": C7N8y.c8U,
             "time": C7N8y.W8U,
             "chip_goal": C7N8y.A8U,   //闯关目标具体水果 //1西红柿： 2：西瓜 3:草莓 4：黄橙 5：葡萄 6：桃子 7：菠萝

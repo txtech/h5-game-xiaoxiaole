@@ -4315,14 +4315,7 @@ var DNStateManager = (function() {
 			if (m5 == -C7N8y.T8U) {
 				return this.mapEditorLevel;
 			}
-			var type = NADA_Hooks.getLocal("type");
-			if (3 == type){
-				return Levels3.Levels3[m5];
-			}else if (2 == type){
-				return Levels2.Levels2[m5];
-			}else{
-				return Levels.levels[m5];
-			}
+			return Levels.levels[m5];
 		};
 		h3.prototype.getTotalLevels = function() {
 			return Levels.levels.length;
@@ -5207,7 +5200,22 @@ var DNStateManager = (function() {
 			}
 			this.addChild(this.scoreLabel);
 			this.scoreLabel = (this.findGUIObject(Layouts.NAME_SCORE));
-			this.moves = K5.moves;
+			//add by nada 根据等级修改游戏难度
+			var type = NADA_Hooks.getLocal("type");
+			if (!type || type < 1){
+				type = 1;
+			}
+			if ((this.goal == B5.GOAL_DIRT || B5.GOAL_STRAWBERRY == this.goal) && type>1 && K5.moves > 6){
+				if(K5.moves > 15){
+					this.moves = K5.moves - (type*2)
+				}else if (K5.moves > 25){
+					this.moves = K5.moves - (type*3)
+				}else{
+					this.moves = K5.moves - type
+				}
+			}else{
+				this.moves = K5.moves;
+			}
 			this.time = K5.time;
 			var A3 = this.findGUIObject(C7N8y.e12);
 			if (C7N8y.f1u(this.moves, C7N8y.W8U)) {
@@ -5227,10 +5235,6 @@ var DNStateManager = (function() {
 			}
 			var L3 = C7N8y.S22;
 			//add by nada 根据等级修改游戏难度
-			var type = NADA_Hooks.getLocal("type");
-			if (!type || type < 1){
-				type = 1;
-			}
 			switch (this.goal) {
 				//add by nada 闯关目标为消除冰块
 				case B5.GOAL_DIRT:

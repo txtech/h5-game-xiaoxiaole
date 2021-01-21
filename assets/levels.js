@@ -4047,15 +4047,15 @@ Levels = (function() {
             [C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.A8U, C7N8y.A8U, C7N8y.S8U, C7N8y.A8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U],
             [C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.A8U, C7N8y.A8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U, C7N8y.W8U]
         ],
-        "chip_types": C7N8y.S8U,
+        "chip_types": C7N8y.S8U, //闯关类型(1-7个水果 随机出现一个)
         "moves": C7N8y.c8U,
         "time": C7N8y.W8U,
-        "chip_goal": C7N8y.A8U,
-        "chip_goal_count": C7N8y.W12,
-        "goal": C7N8y.O82,
-        "score_goal_count": C7N8y.W8U,
-        "bombProb": C7N8y.W8U,
-        "bombCounter": C7N8y.J12
+        "chip_goal": C7N8y.A8U, //闯关目标具体水果 //1西红柿： 2：西瓜 3:草莓 4：黄橙 5：葡萄 6：桃子 7：菠萝
+        "chip_goal_count": C7N8y.W12,  //闯关目标个数
+        "goal": C7N8y.O82, //闯关类型目标
+        "score_goal_count": C7N8y.W8U,  //闯关分数总数
+        "bombProb": C7N8y.W8U,  //炸弹
+        "bombCounter": C7N8y.J12 //炸弹计数器
     };
     K5.LEVEL_SECOND = {
         "form": [

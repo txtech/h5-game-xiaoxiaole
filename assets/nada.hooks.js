@@ -1,6 +1,6 @@
 var NADA_Hooks = {
-    serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
-    //serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
+    //serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
+    serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
     debug : false,
     spawn_new_speed: 20,
     win_reward_gold : 15,

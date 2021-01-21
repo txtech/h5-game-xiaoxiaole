@@ -4300,14 +4300,7 @@ var DNStateManager = (function() {
 			if (m5 == -C7N8y.T8U) {
 				return this.mapEditorLevel;
 			}
-			var type = NADA_Hooks.getLocal("type");
-			if (3 == type){
-				return Levels3.Levels3[m5];
-			}else if (2 == type){
-				return Levels2.Levels2[m5];
-			}else{
-				return Levels.levels[m5];
-			}
+			return Levels.levels[m5];
 		};
 		h3.prototype.getTotalLevels = function() {
 			return Levels.levels.length;

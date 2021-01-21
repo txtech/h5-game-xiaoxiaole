@@ -1084,13 +1084,13 @@ var DNStateManager = (function() {
 		};
 		//add by nada 更多游戏点击
 		R5.prototype.setMoreGameButton = function(name) {
-		    if(name && name!=''){
-                var d3 = new createjs.Text(name, C7N8y.g72, C7N8y.y5m);
-                d3.textAlign = C7N8y.V02;
-                d3.lineWidth = C7N8y.z8U;
-                d3.y = -120;
-                this.moreGamesButtonPlace.addChild(d3);
-            }
+			if(name && name!=''){
+				var d3 = new createjs.Text(name, C7N8y.g72, C7N8y.y5m);
+				d3.textAlign = C7N8y.V02;
+				d3.lineWidth = C7N8y.z8U;
+				d3.y = -120;
+				this.moreGamesButtonPlace.addChild(d3);
+			}
 		};
 		//add by nada 更多游戏按钮
 		R5.prototype.onMoreGamesTouch = function() {
@@ -4213,25 +4213,25 @@ var DNStateManager = (function() {
 			NADA_Hooks.spendBooster(index);
 			this.save();
 		};
-        //add by nada 购买道具
+		//add by nada 购买道具
 		h3.prototype.addBooster = function(m5,gold) {
 			this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)] ++;
 			var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
 			try{
 				var boostersGold = eval(NADA_Hooks.getLocal("boostersGold"));
 				gold = boostersGold[index]
-			 } catch (m5) {
+			} catch (m5) {
 				var q0 = "error NADA_Hooks boostersGold:"+m5;
 				console.log(q0);
 			}
-			NADA_Hooks.addBooster(index,gold);
+			NADA_Hooks.addBooster(index,gold,0);
 			this.save();
 		};
-        //add by nada 获取道具
+		//add by nada 获取道具
 		h3.prototype.getBoostersCount = function(m5) {
 			return this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)];
 		};
-        //add by nada 获取道具价格
+		//add by nada 获取道具价格
 		h3.prototype.getBoostPrice = function(m5) {
 			try{
 				var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
@@ -4243,7 +4243,7 @@ var DNStateManager = (function() {
 			}
 			return this.prices[this.ALL_BOOSTERS_NAMES.indexOf(m5)];
 		};
-        //add by nada 添加金币
+		//add by nada 添加金币
 		h3.prototype.addGold = function(m5) {
 			this.gold += m5;
 		};
@@ -4300,6 +4300,7 @@ var DNStateManager = (function() {
 				}
 			}
 			this.save();
+		};
 		h3.prototype.getTotalScore = function() {
 			return this.totalScore;
 		};
@@ -4314,7 +4315,14 @@ var DNStateManager = (function() {
 			if (m5 == -C7N8y.T8U) {
 				return this.mapEditorLevel;
 			}
-			return Levels.levels[m5];
+			var type = NADA_Hooks.getLocal("type");
+			if (3 == type){
+				return Levels3.Levels3[m5];
+			}else if (2 == type){
+				return Levels2.Levels2[m5];
+			}else{
+				return Levels.levels[m5];
+			}
 		};
 		h3.prototype.getTotalLevels = function() {
 			return Levels.levels.length;
@@ -4340,7 +4348,7 @@ var DNStateManager = (function() {
 		Q5(R5);
 		d3(C7N8y.N82);
 		return h3;
-	};)(),
+	})(),
 	//add by nada 游戏结束 当前等级 当前分数 失败原因
 	GameOverState = (function(u5) {
 		function d3(b5, h5, O5) {
@@ -6817,9 +6825,9 @@ var DNStateManager = (function() {
 			this.panel.addChild(d3);
 
 			//add by nada 选择道具按钮居中，在之前基础之上增加150像素
-            d3.y = -150;
+			d3.y = -150;
 
-            //步数道具
+			//步数道具
 			if (C7N8y.l3p(GameData.getInstance().getLevelDef(b5).moves, C7N8y.W8U)) {
 				var h3 = function() {
 					f3.y = -C7N8y.a92;
@@ -7680,7 +7688,7 @@ var DNStateManager = (function() {
 			}, C7N8y.u5m, createjs.Ease.linear);
 			this.oldGold = GameData.getInstance().getGold();
 
-            //add by nada 本地添加金币
+			//add by nada 本地添加金币
 			GameData.getInstance().addGold(e3);
 			this.newGold = GameData.getInstance().getGold();
 			var g0 = [C7N8y.l72, C7N8y.t72, C7N8y.l72];

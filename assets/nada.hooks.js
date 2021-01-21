@@ -146,14 +146,10 @@ var NADA_Hooks = {
             localStorage.setItem("LEVELS_COMPLETED",gameData.levelsCompleted);
         }
         if (gameData.boostersCount && gameData.boostersCount.length > 6 ){
-            if (JSON.parse(gameData.boostersCount).length === 6){
-                localStorage.setItem("BOOSTERS_COUNT",gameData.boostersCount);
-            }
+            localStorage.setItem("BOOSTERS_COUNT",gameData.boostersCount);
         }
         if (gameData.starsPerLevel && gameData.starsPerLevel.length > 60){
-            if (JSON.parse(gameData.starsPerLevel).length === 60){
-                localStorage.setItem("STARS_PER_LEVEL",gameData.starsPerLevel);
-            }
+            localStorage.setItem("STARS_PER_LEVEL",gameData.starsPerLevel);
         }
     },
     getLocal : function (key){

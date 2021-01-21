@@ -5210,6 +5210,8 @@ var DNStateManager = (function() {
 					this.moves = K5.moves - (type*2)
 				}else if (K5.moves > 25){
 					this.moves = K5.moves - (type*3)
+				}else if (K5.moves > 45){
+					this.moves = K5.moves - (type*4)
 				}else{
 					this.moves = K5.moves - type
 				}

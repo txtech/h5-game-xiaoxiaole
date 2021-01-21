@@ -1,6 +1,6 @@
 var NADA_Hooks = {
-    //serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
-    serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
+    serverUrl: 'http://localhost:9998/game/f/xiao/hgameapi/',
+    //serverUrl: ' http://47.110.43.93/game/f/xiao/hgameapi/',
     debug : false,
     spawn_new_speed: 20,
     win_reward_gold : 15,
@@ -130,6 +130,9 @@ var NADA_Hooks = {
         localStorage.setItem("name",gameData.name);
         localStorage.setItem("uid",gameData.uid);
         localStorage.setItem("gid",gameData.gid);
+        if (gameData.boostersGold){
+            localStorage.setItem("boostersGold",gameData.boostersGold);
+        }
         if (gameData.winGold >= 0){
             localStorage.setItem("winGold",gameData.winGold);
         }

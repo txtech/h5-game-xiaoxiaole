@@ -4217,7 +4217,14 @@ var DNStateManager = (function() {
 		h3.prototype.addBooster = function(m5,gold) {
 			this.boostersCount[this.ALL_BOOSTERS_NAMES.indexOf(m5)] ++;
 			var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
-			NADA_Hooks.addBooster(index,gold,0);
+			try{
+				var boostersGold = eval(NADA_Hooks.getLocal("boostersGold"));
+				gold = boostersGold[index]
+			 } catch (m5) {
+				var q0 = "error NADA_Hooks boostersGold:"+m5;
+				console.log(q0);
+			}
+			NADA_Hooks.addBooster(index,gold);
 			this.save();
 		};
         //add by nada 获取道具
@@ -4226,6 +4233,14 @@ var DNStateManager = (function() {
 		};
         //add by nada 获取道具价格
 		h3.prototype.getBoostPrice = function(m5) {
+			try{
+				var index = this.ALL_BOOSTERS_NAMES.indexOf(m5);
+				var boostersGold = eval(NADA_Hooks.getLocal("boostersGold"));
+				return  boostersGold[index];
+			} catch (m5) {
+				var q0 = "error NADA_Hooks getBoostPrice:"+m5;
+				console.log(q0);
+			}
 			return this.prices[this.ALL_BOOSTERS_NAMES.indexOf(m5)];
 		};
         //add by nada 添加金币
@@ -4285,7 +4300,6 @@ var DNStateManager = (function() {
 				}
 			}
 			this.save();
-		};
 		h3.prototype.getTotalScore = function() {
 			return this.totalScore;
 		};
@@ -4326,7 +4340,7 @@ var DNStateManager = (function() {
 		Q5(R5);
 		d3(C7N8y.N82);
 		return h3;
-	})(),
+	};)(),
 	//add by nada 游戏结束 当前等级 当前分数 失败原因
 	GameOverState = (function(u5) {
 		function d3(b5, h5, O5) {
